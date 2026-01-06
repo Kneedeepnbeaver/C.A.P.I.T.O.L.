@@ -1,0 +1,35 @@
+# Talking Points (Con)
+
+As a concerned advocate for public safety, I strongly oppose SB 1047 due to its potential unintended consequences and lack of effective regulation.
+
+## Serious Concerns about Regulatory Overreach
+
+The bill's broad definitions of AI safety incidents may lead to overregulation, stifling innovation and hindering California's position as a leader in AI development. This could result in lost economic opportunities, decreased investment in the state, and reduced competitiveness globally.
+
+## Flawed Whistleblower Protections
+
+The proposed whistleblower protections are too limited and may deter employees from reporting safety concerns. Without stronger safeguards, whistleblowers risk retaliation, silencing potential warnings about AI system malfunctions or security breaches.
+
+## Unintended Consequences of "Kill Switch" Provision
+
+The requirement for an emergency shutdown switch in AI systems may lead to unintended consequences, such as:
+
+*   System crashes or data loss due to abrupt shutdowns
+*   Economic disruption from sudden losses in production or services
+*   Safety concerns if the "kill switch" is not properly implemented or maintained
+
+## Exemptions and Loopholes
+
+The bill's exemptions for industries like healthcare/life science may create loopholes, allowing companies to sidestep safety protocols and regulatory oversight. This could compromise public health and safety, particularly in high-risk sectors.
+
+## Independent Review and Enforcement
+
+The lack of independent third-party review for positive safety determinations (PSDs) and limited enforcement mechanisms raises concerns about accountability and effective regulation. Without robust oversight, AI systems may continue to pose unaddressed risks to public safety.
+
+## Private Right of Action Limitations
+
+The proposed private right of action is too limited, failing to provide adequate recourse for individuals harmed by critical safety incidents. This omission undermines the bill's promise to protect consumers and citizens from AI-related harm.
+
+## Conclusion
+
+While SB 1047 aims to address concerns about AI safety, its flaws and limitations raise more questions than answers. As a responsible advocate for public safety, I urge lawmakers to reconsider and strengthen the bill to ensure effective regulation and protection of Californians' rights.

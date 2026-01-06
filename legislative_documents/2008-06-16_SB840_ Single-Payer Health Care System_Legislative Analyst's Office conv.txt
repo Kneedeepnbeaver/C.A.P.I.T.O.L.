@@ -1,0 +1,712 @@
+May 22, 2008
+
+Hon. Dick Ackerman Senator, 33rd District Room 3048, State Capitol
+Sacramento, California 95814 Dear Senator Ackerman:
+You requested that we do a fiscal analysis of SB 840 (Kuehl), which would establish in California a single-payer health care system (subsequently referred to as the “sys-tem”), and its companion financing mechanism. Where possible, we based our analysis on SB 840 as written. However, in some cases this was not possible. In instances where dates were clearly impractical or the parameters of the system are yet to be determined, we consulted with Senator Kuehl’s staff in order to better understand the author’s in-tent. In addition, our analysis is based on a financing mechanism that Senator Kuehl
+submitted to Legislative Counsel and provided to us on May 13, 2008 (RN 0812484).
+We subsequently refer to SB 840 and the financing mechanism jointly as the single-payer proposal (SPP). The SPP would create the largest program in state government. State expenditures for the SPP would significantly exceed total General Fund spending for currently authorized programs in its first full year of implementation. We mainly focused our analysis on the major costs and revenues associated with the SPP in order
+to address your questions.
+
+EXECUTIVE SUMMARY OF FINDINGS
+Fiscal Projection Overview. We estimated the revenues and costs of the SPP for 5.5 years, assuming an implementation date of January 1, 2011. Our estimate indicates that that the SPP would result in a net shortfall of $42 billion in 2011-12 (the first full year of operations) and $46 billion in 2015-16. These shortfalls result largely from a
+faster rate of growth for health benefits costs relative to the SPP revenues. In addition to the funding shortfall within the program, we estimate that the SPP would have a sig-nificant General Fund effect in the form of lower General Fund tax revenues and other
+General Fund cost increases.
+
+Preprinted logo will go here.
+
+Hon. Dick Ackerman	2	May 22, 2008
+
+Overview of Significant Assumptions. Our findings are subject to a variety of sig-
+nificant assumptions, risks, and uncertainties. These primarily lie in the following areas:
+·	Current Government Health Spending. We assume that the state would con-tinue to receive federal funding for Medi-Cal and the Healthy Families Pro-gram (HFP), subject to certain conditions, and that the federal Medicare pro-gram would generally continue to operate as a separate program. We also as-sume that significant health care funding currently spent by the state and lo-
+cal governments would be available to the SPP.
+·	Health Care Administration. We assume that the SPP would realize savings associated with reduced levels of physician and hospital administration costs, and that the state could operate the single-payer system at relatively low ad-ministration costs. We also assume that the state would need to make signifi-cant contributions to an operating reserve in the first two years of the pro-
+gram.
+·	Other Universal Coverage Issues. We assume that the state would realize sav-ings to a certain extent from bulk purchasing of prescription drugs and other medical equipment. We also assume that health care utilization would in-crease under the SPP but that it would be limited to a certain extent by physi-
+cian supply constraints.
+·	Economic Issues. We assume that health care costs would continue to grow according to recent trends prior to implementation of the system. Following implementation, we assume the state would achieve somewhat reduced rates
+of health cost growth.
+Overview of Additional Questions. We also address questions regarding the sys-
+tem’s implications for employers, employees, and physicians.
+·	 Employers and Employees. We find that smaller family units, higher-income individuals, and employers that are not currently providing health care bene-fits to their employees would generally pay more for health care under the
+SPP.
+·	Physician Supply in the State. Some evidence suggests that the state already faces a shortage of physicians. The effects of the SPP on physician supply in the state is unclear in the long run, but would depend primarily upon physi-
+cian payment rates.
+
+BACKGROUND
+While the majority of Californians receive health coverage through insurance pro-
+vided by an employer, various federal, state, and local government programs also pro-
+
+Hon. Dick Ackerman	3	May 22, 2008
+
+vide health care services to California residents. The federal government administers the Medicare program to provide health coverage for qualified persons 65 years of age or older and certain other persons, and oversees the Medicaid program for low-income families and adults. Military personnel also receive health care through federal pro-grams. The state administers Medi-Cal, California’s version of Medicaid, and various other programs to provide health care services to children and persons in need of men-tal health care, developmental services, or substance abuse treatment. These programs receive support from state and federal funds, including revenues approved by Califor-nia voters for certain purposes through ballot measures such as Proposition 99 (passed in 1988) and Proposition 63 (passed in 2004). Local governments also administer certain health-related programs for indigent persons and those in need of mental health and other services. Local governments fund these programs from various sources, including “realignment” funds, which consist of sales tax and vehicle license fee proceeds that the
+state collects and passes on to local governments.
+
+OVERVIEW OFTHE SPP
+The SPP would establish a system of universal health care coverage in California that provides all residents with comprehensive health care benefits. A new state agency headed by a commissioner would have broad authority to administer this system, and would contract with hospitals, physicians, and other providers to deliver benefits. In order to pay the costs of the system, the SPP would: (1) establish a series of new taxes, (2) redirect current health program funding, and (3) direct the state to seek agreements to obtain federal and local health care funds. We describe significant components of the
+SPP in more detail below.
+
+Who Can Participate in the System?
+All California residents would be eligible to participate in the system regardless of citizenship status. Residency would be based upon physical presence in the state with the intent to establish permanent residency. The commissioner would establish stan-dards and a procedure for persons to demonstrate proof of residency. The commis-sioner would also establish a procedure to enroll eligible residents into the system and provide them with identification cards that would be used by health care providers to determine a person’s eligibility for services. In the event of an influx of people into the state for the purposes of establishing residency in order to receive medical care, the commissioner would have the authority to establish an eligibility waiting period and
+other criteria needed to ensure the fiscal stability of the system.
+
+What Benefits Are Covered?
+The benefits covered by the system would include all medical care determined to be
+medically appropriate by an individual’s health care provider subject to certain limita-
+
+Hon. Dick Ackerman	4	May 22, 2008
+
+tions. The major covered benefits include but are not limited to: (1) inpatient and outpa-tient health care facility and health care provider services, (2) diagnostic and laboratory services, (3) pharmaceuticals, (4) emergency transportation and emergency care ser-vices, (5) dental and vision care, (6) durable medical equipment including eyeglasses and hearing aids, (7) immunizations and preventive care, (8) mental and behavioral health care, (9) substance abuse treatment, (10) up to 100 days in a skilled nursing facil-ity following hospitalization, and (11) family planning services and supplies. Some types of services would be limited including nursing home care. Other types of services
+would not be provided such as certain elective procedures and private hospital rooms.
+
+What Happens to Private Insurance?
+The SPP would prohibit health care service plan contracts or health insurance poli-cies from being sold in California for services covered by the system. Therefore, the in-surance companies and other entities that currently sell health care service plan con-tracts or health insurance for services covered by the system would likely close down some or all of their operations in California. However, some of these insurance compa-nies might continue to sell health insurance for services not covered by the system. Also, some insurance companies might provide third-party administrator services to the sys-
+tem and thereby continue some of their operations in California.
+
+What Happens to Federal, State, and Local Health Care Programs?
+The SPP would require the commissioner to seek all necessary waivers, exemptions, agreements, or legislation to allow various existing federal, state, and local health care payments to be paid to the system, which would then assume responsibility for all benefits and services previously paid for with those funds. However, the extent to which the system assumes responsibility to provide the benefits currently provided by federal programs such as Medicare and local programs operated by counties and other local health jurisdictions would depend largely on the success of the commissioner’s negotiations with these parties. If negotiations with the federal government to incorpo-rate existing health care programs into the system were unsuccessful, many of these programs would likely continue to operate apart from the system. For example, if the federal government declined to agree to allow the system to assume responsibility for providing health care services to Medicare beneficiaries, Medicare would continue as a
+federally operated program in California.
+Under SPP, the commissioner would appoint a transition advisory group that would be required to make recommendations to the Governor and Legislature on how to inte-grate into the system the health care delivery services of the following state departments and agencies: (1) Department of Health Care Services (DHCS), (2) Department of Man-aged Health Care (DMHC), (3) Department of Aging, (4) Department of Developmental
+Services (DDS), (5) Health and Welfare Data Center, (6) Department of Mental Health.
+
+Hon. Dick Ackerman	5	May 22, 2008
+
+(DMH), (7) Department of Alcohol and Drug Programs (DADP), (8) Department of Reha-bilitation, (9) Emergency Medical Services Authority, (10) Managed Risk Medical Insur-ance Board, (11) Office of Statewide Health Planning and Development, (12) Department
+of Insurance, and (13) Department of Public Health (DPH).
+
+Revenue Sources
+Revenue sources proposed by the SPP would include certain new taxes as well as
+various government funds redirected from other current programs:
+·	New Taxes. The SPP provides for taxes on payrolls, self-employed income, and nonwage income. The first $7,000 of payroll and self-employment income
+are exempted, as are amounts of all three types of income over $200,000.
+·	State and Local Funding. All current state payments for health care services would be paid directly to the system, which would then assume responsibil-ity for providing all the benefits and services previously paid for by the state government. In addition, the commissioner would establish formulas for eq-uitable contributions to the system from all California counties and other lo-
+cal health jurisdictions.
+·	Federal Monies. To the extent agreed to by the federal government, all current federal payments for health care services in California would be paid directly to the system, which would then assume responsibility for all benefits and
+services previously paid for by the federal government.
+Healthcare Fund. The SPP establishes in the State Treasury the Healthcare Fund (subsequently referred to as the “fund”) for the purposes of financing the system. Reve-nues would be deposited into the fund to support the system. There are two accounts within the fund. One to provide for all annual state expenditures for health care and one to maintain a reserve sufficient to pay all losses and claims for which the system may be liable. The commissioner would work with the Department of Insurance and
+other experts to determine an appropriate level of reserves for the system.
+Under the SPP, the commissioner has the authority to self-insure the system against unforeseen expenditures or revenue shortfalls not covered by reserves and to borrow funds to cover temporary revenue shortfalls not covered by the reserve account or issue bonds for this purpose. Furthermore, the SPP allows for a General Fund loan to the fund in the event that the annual budget act is not enacted by June 30 and the commis-
+sioner finds that the funds in the reserve account would be insufficient.
+
+System Administration
+Establishes California Healthcare Agency. The SPP would establish the California
+Healthcare Agency (subsequently referred to as the “agency”) under the control of the.
+
+Hon. Dick Ackerman	6	May 22, 2008
+
+commissioner. The commissioner’s powers would include but would not be limited to the following: (1) establishing the system’s budget; (2) setting provider rates;
+(3) managing the agency’s personnel; (4) establishing the system’s goals, standards, and priorities; (5) establishing and allocating resources to up to ten health planning regions;
+and (6) promulgating regulations to implement the SPP.
+The SPP would establish within the agency the following offices, boards, committees, and partnerships to carry out the activities described above: (1) Office of Patient Advo-cacy, (2) Office of Health Planning, (3) Office of Health Care Quality, (4) Healthcare Pol-icy Board, (5) Healthcare Payments Board, (6) Public Advisory Committee, and
+(7) Partnerships for Health. The administration of the agency would be supported with
+monies from the fund created by the SPP.
+The SPP would also establish the following offices and commissions outside the
+agency:
+·	Office of Inspector General (OIG). The OIG would be established within the Attorney General’s Office and would have powers to investigate, audit, and review the financial and business records of public and private entities that
+provide services or products to the system.
+·	Healthcare Premium Commission. The Healthcare Premium Commission would do the following: (1) determine the aggregate cost to provide health care under the system and, (2) develop a tax schedule (referred to in the SPP as a “premium structure”) that will generate adequate revenue for the fund and ensure stable, actuarially sound funding for the system. The SPP would require the Healthcare Premium Commission to recommend a tax schedule to
+the Governor and Legislature on a specified date.
+
+Provider Payments
+Physicians and Other Individual Providers. Under the SPP, physicians and other individual providers (such as dentists) generally would be compensated for their ser-vices by the single-payer system. These providers would enter into a contract with the system and may choose to be compensated as fee-for-service providers or as providers employed by, or under contract with, health care systems that provide comprehensive coordinated services, such as Kaiser Permanente or potentially other medical practice groups. (In a fee-for-service system, a health care provider receives an individual pay-ment for each medical service delivered to a beneficiary.) Fee-for-service health care providers would choose representatives of their specialties to negotiate reimbursement rates with the Healthcare Payments Board on their behalf. The Healthcare Payments Board would also negotiate reimbursement rates with health care systems that provide
+comprehensive, coordinated services.
+
+Hon. Dick Ackerman	7	May 22, 2008
+
+Under the SPP, physicians also can elect not to be compensated by the system, but rather to receive reimbursement directly from the person to whom they provide ser-vices. The SPP requires the commissioner to monitor the level of such spending and to
+take steps to reduce it under specified circumstances.
+
+Hospitals and Other Groups Would Receive Annual Budgets. The SPP would estab-lish budgets for hospitals, certain clinics, and medical provider groups, such as practice associations or Kaiser Permanente. These budgets would include components for oper-
+ating expenses and capital expenditures.
+
+Additional Key System Features
+Establishes a Premium Structure. As described above, the Healthcare Premium Commission would determine the aggregate costs of providing health care coverage and develop a tax schedule that would generate sufficient revenue to ensure stable funding for the system. The SPP provides for four separate taxes to finance the system. The tax schedule developed by the commission would be required to satisfy several cri-teria including being means-based and ensuring that all income earners and employers contribute an amount that is affordable (although the SPP does not specify criteria for
+determining affordability).
+Requires Annual Budget. The SPP requires the commissioner to prepare an annual budget for the system that includes all expenditures, specifies a limit on total annual expenditures, and establishes allocations for each health care region. The commissioner is required to limit the growth of spending on a statewide as well as regional basis in
+order to ensure that expenditures do not exceed revenues under the system.
+Establishes Cost Control Measures. If the commissioner determined that statewide revenue trends indicated the need for statewide cost control measures, the SPP would require the commissioner to convene the Healthcare Policy Board to discuss the need for cost control measures and to report to the Legislature and the public regarding the
+possible need for such measures.
+Limits on Administrative Costs. The SPP requires the commissioner to establish a budget that covers all the costs of administering the system. Administrative costs on a systemwide basis would be limited to 10 percent of system costs within five years of completing the transition to the system and 5 percent of system costs within ten years of
+completing the transition to the system.
+Provides for Bulk Purchasing. The commissioner would have the authority to use the purchasing power of the system to negotiate the lowest possible prices for prescrip-
+tion drugs and durable and nondurable medical equipment.
+Transition Job Training. During the transition to the system, the commissioner
+would determine an appropriate level and duration of spending to support the retrain-
+
+Hon. Dick Ackerman	8	May 22, 2008
+
+ing and job placement of persons who are displaced from employment as a result of the transition to the system. The commissioner would establish guidelines for giving special consideration for employment to persons who have been displaced as a result of the
+transition to the system.
+
+Activation Depends Upon Anticipation of Funding Availability
+The SPP specifies that only its provisions relating to the Healthcare Premium Com-mission would become operative upon its passage. The remaining provisions would become operative on the date the Secretary of California Health and Human Services notifies the Legislature that sufficient funding exists to implement the system. Once this
+notification occurs, the SPP requires the system be operative within two years.
+
+SUMMARY OF POTENTIAL FISCAL EFFECTS
+
+We summarize our fiscal projections in Figure 1 and then discuss in greater detail our estimates for the major revenues and costs. Later in this report, we discuss the ma-jor assumptions we made in order to generate our estimates and how altering these as-
+sumptions could affect the results. Figure 1
+Projected Fiscal Effects of the Single-Payer Proposala.
+
+(In Billions)
+
+Resources
+New tax revenue
+Redirected health program funding Federal funds
+State funds
+Redirected state retiree health contributions Local government contributions
+Total Resources Costs
+Health care benefits Administration
+Contribution to operating reserve.
+
+Total Costs
+Net annual surplus (shortfall)
+
+2010-11b.
+
+$53.4
+
+13.7 9.3 1.0 2.1
+
+$79.5
+
+$96.5 4.0 8.0
+
+$108.6 -$29.1
+
+2011-12
+
+$112.6
+
+28.8 19.6 2.2 4.3
+
+$167.4
+
+$194.3 7.7 7.7
+
+$209.8 -$42.4
+
+2012-13
+
+$118.6
+
+30.3 20.7 2.3 4.4
+
+$176.4
+
+$205.7 7.4 0.4
+
+$213.5 -$37.1
+
+2013-14
+
+$124.9
+
+32.0 21.8 2.4 4.6
+
+$185.7
+
+$217.8 7.4 0.4
+
+$225.5 -$39.8
+
+2014-15
+
+$131.6
+
+33.7 23.0 2.6 4.7
+
+$195.5
+
+$230.7 7.2 0.4
+
+$238.4 -$42.9
+
+2015-16
+
+$138.6
+
+35.4 24.3 2.7 4.9
+
+$205.9
+
+$244.5 7.1 0.5
+
+$252.0 -$46.2
+
+a SB 840 as amended July 10, 2007; financing mechanism dated May 13, 2008. b Half-year effect following coverage implementation January 1, 2011.
+
+Hon. Dick Ackerman	9	May 22, 2008
+
+LAO Bottom-Line Estimate
+Significant Shortfalls Projected. Figure 1 represents our estimate of the most likely fiscal effects under the SPP. Subject to the assumptions and uncertainties described fur-ther below, we estimate that the SPP would result in state costs of $109 billion for six months of coverage beginning January 1, 2011, and $210 billion in 2011-12, the system’s first full year of operations. The SPP would also result in revenues of $80 billion in 2010-11, also beginning January 1, 2011, and $167 billion in 2011-12. Therefore, we pro-
+ject that expenditures would exceed revenues by $29 billion in 2010-11 and $42 billion in
+2011-12.
+Alternate Scenarios. We also estimated the potential fiscal effects under the SPP based on two alternate sets of assumptions. Under one alternate set, a “better case sce-nario,” we assumed significantly lower administrative costs, somewhat lower utiliza-tion of health services, and a slower health inflation growth rate. Under the second al-ternate set a “worse case scenario,” we assumed higher administrative costs, utilization of services, and health cost growth. In both of these scenarios, we regard these assump-tions as possible but less likely than those used in developing the estimates shown in Figure 1. Under both scenarios, expenditures exceed revenues. In the better case sce-nario, the shortfall in 2011-12 was about $23 billion smaller than the estimate in Figure 1.
+Under the worse case scenario, the shortfall was about $23 billion larger in 2011-12.
+
+PROJECTED COSTS
+In this section, we first provide a general overview of our approach to estimating health care costs under the SPP. We then provide additional detail on the costs we pro-
+ject for the system.
+
+LAO Approach to Analyzing Health Care Costs for the SPP
+The Lewin Group, a health consultancy based in Washington, D.C., published a re-port in 2005 entitled The Health Care For All Californians Act: Cost and Economic Impacts Analysis (subsequently referred to as the “Lewin report”). The report provides an esti-mate of the fiscal impact of a previous single-payer health care proposal from Senator Kuehl (SB 921, 2004), had that proposal been fully implemented in 2006. While there are some differences between SB 921 and the SPP, the key elements of the single-payer
+health care system proposed by both these measures are substantially similar.
+Basis of LAO Cost Estimates. The Lewin report employed a proprietary model to develop estimated costs of the health care benefits that the single-payer system would provide. While we did not have access to the model itself, we discussed the model’s de-sign and output with the report’s author. These discussions and our review indicated that the Lewin Group employed a reasonable approach to modeling the effects of the
+proposal. We relied upon that report’s estimates of per-person health spending under a.
+
+Hon. Dick Ackerman	10	May 22, 2008
+
+single-payer system in 2006 as a starting point to generate our own estimates. We de-rived a per-person health benefits cost for 2006 from the Lewin report estimates. We then adjusted this per person cost to account for the assumptions we made that differ from those made by Lewin, and projected the per-person cost forward in time. By mul-tiplying this per-person cost by the number of persons that would be eligible to receive services under the system in any given year, we arrive at the estimated total health care
+costs for that year.
+
+Health Care Benefits
+Benefit Costs Under the SPP. Costs to provide benefits under the SPP include pay-ments to providers for all services rendered to California residents. We estimate that health care benefit costs under the system would total $97 billion for 2010-11 (for ser-vices beginning January 1, 2011) and $194 billion in 2011-12, the first full year of opera-tions. This full-year estimate includes costs of $4 billion for nursing home services that the state would provide only to Medi-Cal enrollees because such care would not be a benefit under the SPP. These benefit costs do not include federal expenditures for Medi-care or military-related health care costs which we assume would continue to be pro-vided and paid for by the federal government. However, these costs do include pay-ments for premiums and other out-of-pocket spending that Medicare enrollees would
+otherwise incur themselves.
+
+Operating Costs
+Administration Costs. Administration would include operating the single-payer system and ongoing Medi-Cal administration. Medi-Cal tasks would consist of process-ing eligibility for the entire Medi-Cal population and administering certain long-term care benefits for Medi-Cal eligibles that are not covered by the system. We estimate that these combined costs would total $8 billion in 2011-12, the first full year of operations.
+This includes costs of $1.5 billion to administer Medi-Cal eligibility.
+Contribution to Operating Reserve. The SPP would require the system to maintain an unspecified operating reserve. Based upon our analysis of a prudent reserve funding level (discussed below), we project that costs to build up the reserve would be $8 billion in both 2010-11 and 2011-12. The contributions to the reserve would be higher in the first 18 months to initially build up the reserve. In following years, the contributions would only need to adjust the reserve for the annual growth in benefit spending. We also assume that these contributions would be offset by several hundred million dollars
+annually due to interest earned on the reserve balance.
+
+PROJECTED RESOURCES
+The SPP proposes to fund the system with a combination of new tax revenues (de-
+posited in the Healthcare Fund) as well as the redirection of current funding for health.
+
+Hon. Dick Ackerman	11	May 22, 2008
+
+care services from the federal, state, and local governments. We describe our estimates
+for each of these resources below.
+
+New Tax Revenues
+The SPP provides for four taxes to finance the system. Two of these taxes would be levied on wages and, presumably, be administered by the Employment Development Department (EDD). The other two would be levied on various other types of income, and would likely be administered by the Franchise Tax Board. We estimate that, the four taxes would collectively generate about $113 billion to finance the system in
+2011-12. About one-half of this money would come from the employer payroll tax. Our
+projections for these revenues are shown in Figure 2 and discussed below. Figure 2
+Estimated New Tax Revenues Resulting From the SPP
+
+(In Billions)
+
+Employer Wage Tax Employee Wage Tax
+Self-Employed Income Tax Nonwage Income Tax
+Totals
+a Half-year beginning 1/1/11.
+
+2010-11a.
+
+$28 14 3
+$53
+
+2011-12
+
+$58 29 7 19
+
+$113
+
+2012-13
+
+$61 30 8 20
+
+$119
+
+2013-14
+
+$64 32 8 21
+
+$125
+
+2014-15
+
+$67 33 8 23
+
+$132
+
+2015-16
+
+$70 35 9 24
+
+$139
+
+Note: Detail may not total due to rounding.
+
+Employer Tax on Wages. The largest single revenue source in the SPP is a tax to be paid by employers on the portion of each employee’s annual wages that is greater than $7,000 and less than $200,000. The proposal calls for a tax rate of 8 percent. This tax
+would raise about $58 billion in 2011-12, the first full year of implementation.
+Employee Tax on Wages. Another tax in the SPP would be paid by employees on the portion of their annual wages that is greater than $7,000 and less than $200,000. The proposal calls for a tax rate of 4 percent. This tax would raise approximately $29 billion
+in 2011-12.
+Tax on Self-Employed Income. The SPP also provides for a tax on the portion of self-employed income that is greater than $7,000 and less than $200,000. The proposal calls
+for a tax rate of 11.5 percent. This tax would raise about $7 billion in 2011-12.
+Tax on Nonwage Income. The SPP also calls for a tax on amounts of nonwage in-
+come (for example: interest, dividends, and capital gains) less than $200,000. The pro-
+
+Hon. Dick Ackerman	12	May 22, 2008
+
+posal calls for a tax rate of 11.5 percent. This tax would generate about $19 billion in
+2011-12.
+
+Tax Rate Level Required to Meet Projected Costs
+We note that the author has indicated a willingness to adjust the tax rates currently specified in the SPP if necessary in order to pay for the expenditures associated with this program. Taking into account resources from other sources detailed below, we es-timate that the revenues would cover estimated costs if the combined payroll tax rates
+were 16 percent and the other tax rates were each 15.5 percent.
+
+Redirection of Other Government Funds
+Our projections assume that the system would receive funds redirected from fed-eral, state, and local health programs, as well as from state government retiree health contributions. We estimate that redirected funds and local contributions would total
+$55 billion in 2011-12, including the sources we describe below.
+Federal Health Funds. We assume that California would be able to obtain an agree-ment with the federal government to maintain its funding for Medi-Cal and HFP. Federal funding redirected from the Medi-Cal Program and HFP would provide $28 billion of the redirected funds that we project in resources for the state in 2011-12. Of the federal Medi-Cal funding, over $2 billion would result from the federal share of costs for beneficiaries made eligible by the SPP’s proposed expansion of Medi-Cal eligibility to 200 percent of
+the federal poverty level (FPL) (about $42,000 for a family of four in 2008).
+State Health Program Funds. We estimate that the system would receive $20 billion in state funds redirected from other current state programs in 2011-12. Of these funds, $17 billion would be redirected from Medi-Cal and HFP. Additional funds totaling
+$3 billion would be redirected from programs operated by DMH, DADP, DPH, and
+DDS. We also include $266 million in Proposition 99 funds in our estimate.
+Retired State Employee Health Contributions. We assume that the state could redi-rect amounts that it currently contributes toward the costs of health benefits for state government retirees, subject to the risks described later below. These funds amount to
+$2 billion in 2011-12.
+Local Government Contributions. We estimate that the system would receive
+$4 billion in funds redirected from local government agencies in 2011-12. Roughly one-half of this amount would consist of funds currently received by local agencies in sup-port of health realignment. Local government contributions also include $1 billion in mental health realignment funds that we estimate would be available to the system. We assume that realignment funds designated for public health uses would remain with
+local agencies with no changes under the SPP.
+
+Hon. Dick Ackerman	13	May 22, 2008
+
+General Fund Effects
+In addition to the fiscal effects summarized in Figure 1, we find that the state would incur administrative costs prior to implementation of the SPP as well as additional costs for employee wages or health benefits contributions under the SPP. Furthermore, we find that the SPP would cause a number of changes in the structure of the California economy that could impact the General Fund. We summarize these potential effects in Figure 3 and discuss them further below. These effects are not included in our estimates
+of the revenues and costs for the SPP. Figure 3
+Potential General Fund Effects of the SPP
+
+Revenue Reductions.
+
+· Taxes on insurance companiesa · Economic dislocations
+· Labor market adjustments.
+
+Revenue Increases
+· Reduced health care-related tax deductions and exclusions
+Additional Costs
+· One-time pre-implementation administration costsb
+· Additional state employee health benefit costs or wages.
+
+Annual Effect (Unless Otherwise Indicated)
+
+Hundreds of millions of dollars Low hundreds of millions of dollars
+Unknown, potentially hundreds of millions of dollars.
+
+Hundreds of millions of dollars.
+
+Up to low hundreds of millions of dollars.
+
+Low hundreds of millions of dollars.
+
+a Includes Gross Premiums Taxes and Corporation Taxes.
+b Pre-implementation costs expected to occur during two years prior to implementation of the SPP.
+
+Administration Costs Prior to Single-Payer Implementation
+Some administrative costs would be incurred in the two years prior to the imple-mentation of the SPP. Planning tasks would include obtaining necessary agreements with federal and local officials, negotiating payments with providers, and establishing operating systems. In order to procure a payment system capable of handling all medi-cal claims under the SPP, it would likely be necessary for the state to contract with a third-party administrator. (Developing such a system in-house would likely require five years or more.) We estimate state costs of up to the low hundreds of millions of dollars
+to carry out these pre-implementation activities.
+
+Hon. Dick Ackerman	14	May 22, 2008
+
+State Employee Health Contributions and Wages
+The state currently pays the majority of the health care premiums for its employees. Our review indicates that the state’s contributions for employee health care premiums may total less than the state’s payroll taxes (including taxes to be paid by employees) un-der the SPP. We find it likely that state employees would seek to be held harmless from any net changes to compensation and health care benefit costs under the SPP. In addition, the state probably would need to provide offsetting compensation increases of some kind in order to remain competitive in the labor market. Thus, we estimate that the state
+would incur additional costs in the low hundreds of millions of dollars annually.
+
+Taxes on Insurance Companies
+Under current state law, insurance companies are subject to either a tax of 2.35 per-cent on their annual gross premiums or to the Corporation Tax. We estimate that the issuance of health insurance will generate about $400 million in General Fund revenues in 2007-08. If this proposal were to be adopted, health insurance issuing activities would be reduced significantly, resulting in an annual revenue loss in the hundreds of millions
+of dollars.
+
+Reduced Health Care-Related Tax Deductions and Exclusions
+Under current Personal Income Tax (PIT) law, a variety of health care expenditures may be either deducted or excluded from income. The SPP would provide funding that would substitute for many of these expenditures. In particular, the SPP should greatly reduce amounts qualifying for the itemized deduction for medical expenditures that are in excess of 7.5 percent of a taxpayer’s adjusted gross income. The proposal would also reduce the use of “cafeteria plans” through which taxpayers pay some deductibles and copayments with pretax earnings. We estimate that these changes would increase PIT
+revenues by hundreds of millions of dollars annually.
+Currently, the self-employed may deduct health care contributions when computing their taxable income under the PIT. It is unclear to us whether the tax paid by the self-employed under the SPP would be deductible. If it is not, the loss of this deduction would result in a PIT General Fund increase of about $200 million annually. On the other hand, if the new tax is deductible, any increase in self-employed health care con-tributions would result in a loss of PIT General Fund revenues. Due to the uncertainty
+concerning this issue, we have not incorporated this estimate into Figure 3.
+
+Economic Dislocations
+As described above, the SPP would significantly change health care administration in California. These changes would create dislocations in the economy. The General Fund impact of these changes would depend on a number of factors, such as: layoffs of
+administrative employees, the speed with which dislocated employees are reabsorbed.
+
+Hon. Dick Ackerman	15	May 22, 2008
+
+elsewhere in the economy, and any changes in earnings for those dislocated employees that do find new employment. Administrative savings will also be reflected in reduced earnings—and, hence, reduced tax payments—for businesses that provide administra-tive services. Offsetting this will be increased profits for providers whose administrative costs are reduced. In total, reductions in tax revenues from economic dislocations result-ing from the SPP could be in the low hundreds of millions of dollars annually. These reductions could be mitigated (or even reversed) if the funds freed up through adminis-
+trative savings are redeployed in tax-generating activities elsewhere in the economy.
+
+Labor Market Adjustments
+Over time, the SPP would cause changes—both increases and decreases—in wages throughout the economy. The SPP would increase the cost to employers of some em-ployees while reducing the cost to employers of other employees. Specifically, the pro-posal would increase employer health care contributions for all employees for whom the employer is not providing health benefits as well as for high-wage workers for whom the employer’s contribution is less than 8 percent of their wage. Similarly, the proposal would decrease employer costs for employees for whom the employer’s health care contribution is greater than 8 percent of the employee’s wage. For example, if an employer is making a $4,000 annual health care contribution for each single employee, the employer’s cost would increase under the new proposal for all single employees
+making more than $57,000 per year, and decrease for all of its other single employees.
+Employers would respond to this by trying to reduce wages paid to employees whose cost has increased, and by being willing to offer higher wages to those whose cost has decreased. Over time, these labor market adjustments would likely result in decreased taxable wages for some employees and increased taxable wages for others relative to what they otherwise would have been. The net effect of all of these labor market adjustments is unknown, but could potentially result in an annual revenue loss
+in the hundreds of millions of dollars.
+
+MAJOR LAOASSUMPTIONS,RISKS, AND UNCERTAINTIES
+The SPP would significantly alter the structure of California’s entire health care de-livery system. Many of the changes that would occur if the SPP were implemented are unprecedented in the United States. Therefore, assessing the SPP’s possible fiscal effects necessitated making a number of significant assumptions regarding revenues and costs. While our interviews with relevant experts and our review of existing literature helped to inform our assumptions, the magnitude and unprecedented nature of the SPP means that many of our assumptions are subject to uncertainty. Here we summarize the major factors contributing to the shortfalls we project. Next, we discuss major assumptions that we made in preparing our estimates as well as risks and uncertainties inherent in
+our projections. The various issues in this section are organized into (1) issues regarding.
+
+Hon. Dick Ackerman	16	May 22, 2008
+
+federal, state, and local funding redirection; (2) administration issues; (3) universal cov-erage implications for bulk drug purchasing and service utilization; and (4) economic
+issues.
+
+Significant Factors Contributing to Shortfall
+A substantial portion of our analysis relies on modeling and estimates described in the Lewin report, which concluded that SB 921 (2004) would generate sufficient re-sources to pay the costs for universal coverage. Nonetheless, our estimates indicate the SPP would incur annual shortfalls over our projection period. The estimates for our first full year of implementation in 2011-12 differ from those estimated by Lewin for the first full year of implementation (2006) primarily for the three reasons discussed in more de-
+tail below.
+Interim Growth Rates. The Lewin report estimated costs and revenues assuming full implementation in 2006. Between that year and 2011-12, we estimate that health benefits costs would grow at a higher rate than the SPP proposed tax base and redi-rected health funds. This difference in growth rates accounts for over one-half of the
+shortfall we project in 2011-12.
+Data Sources. The Lewin report used data from a variety of sources, much of which originated between 1998 and 2003, including some data from national surveys. Our analysis uses more recent data that, where possible, is more specific to California and based on actual reported data rather than surveys. For example, we used wage data provided by EDD instead of survey data, resulting in a lower estimate of payroll taxes than projected in the Lewin report. In total, these various data differences contributed
+roughly 40 percent to the shortfall we project for 2011-12.
+Some Different Assumptions. While we generally agree with many of the assump-tions regarding savings and costs used in the Lewin report, our assumptions differed somewhat in a few areas. Our estimates assume somewhat lower costs from health care utilization as well as somewhat higher costs for administration and drug purchasing. Our estimates also include the costs of establishing an operating reserve, which the Lewin report did not include. Additionally, we estimated that greater amounts of state and local funding could be redirected to the SPP than did the Lewin report. We describe these differences in greater detail below. The net effect of these assumptions contribute
+to most of the remaining shortfall.
+
+Hon. Dick Ackerman	17	May 22, 2008
+
+Federal, State, and Local Funding Issues.
+
+Federal Funds
+The SPP would require the commissioner to seek necessary waivers or other ap-provals from the federal government so that all current federal payments to the state for health care services could be paid directly to the system, which would assume respon-sibility for all benefits and services. Under the state’s current system, federal funds are estimated to provide about $23 billion in 2007-08 for Medi-Cal and $1 billion more for various other state-administered health programs. The state would need to obtain such agreements from the federal Centers for Medicare and Medicaid Services (CMS), which administers those two programs as well as the State Children’s Health Insurance Pro-
+gram (HFP in California).
+Medicaid Requirements Create Administrative Challenge. Based on discussions with DHCS, which administers Medi-Cal, federal law prohibits CMS from waiving cer-tain minimal eligibility requirements for Medicaid programs, including collection of a signed application from beneficiaries and verification of an applicant’s immigration status and income. Federal funding is only available to pay for services provided to Medicaid enrollees. Therefore, absent a change in federal law, the state would have to maintain some form of a Medi-Cal administrative enrollment process in order to con-
+tinue to receive its federal Medi-Cal funds.
+The need for California to maintain its Medi-Cal administrative enrollment process creates an obstacle not addressed in the SPP. Under the proposed system, nearly all benefits currently provided by Medi-Cal would be available to all residents through the single-payer system, without any need for a resident to take the trouble to submit a Medi-Cal application. We find it likely that under such circumstances, most residents who are eligible for Medi-Cal would have little incentive to apply and therefore would not do so. In this event, the state would lose most of its Medi-Cal federal funding as the program’s enrollment declines. However, we assume that the state would agree to es-tablish a procedure by which persons who may be eligible for Medi-Cal (perhaps identi-fied through wage data) would be required to apply for the program, thereby meeting federal requirements and maintaining federal funding. Such a process would require continued funding of some existing administrative costs related to Medi-Cal enroll-ment. We further assume that such a process would be able to enroll all of the Medi-Cal population (adjusted for growth trends), provided that an effective enforcement mechanism was put in place to ensure that Medi-Cal eligibles apply for enrollment. However, if the commissioner is unable to establish an effective process for requiring eligible persons to apply for Medi-Cal, the state potentially would lose a significant por-
+tion of the $25 billion in federal funds in 2011-12.
+
+Hon. Dick Ackerman	18	May 22, 2008
+
+Expansion of Medi-Cal Eligibility Would Generate Additional Federal Funds. Cur-rently, children and parents with incomes up to 100 percent of FPL are generally eligi-ble for Medi-Cal. Children five years of age or younger in families with incomes up to 133 percent of FPL are also eligible. The SPP states that residents in families with in-comes up to 200 percent of FPL (about $42,000 for a family of four in 2008) would be eligible for Medi-Cal. Expansion of eligibility for parents and children is permissible under federal Medicaid laws and procedures, but eligibility for able-bodied, childless adults is not permissible. An expansion for such adults would require approval of a “waiver” from CMS. We assume that the state could expand eligibility to 200 percent of FPL for children and parents, but not for childless adults. Because all residents who are apparently eligible to enroll in Medi-Cal would be mandated to do so, we estimate that the state would obtain additional federal funds of $2.1 billion in 2011-12 for services
+provided to the expansion population.
+Federal Share of HFP Would Continue. The federal government currently provides about two-thirds of the funds for HFP. Federal funding for this program is currently au-thorized only through March 2009. We assume that this funding will be reauthorized at a level sufficient to provide at least the same level of federal funding HFP currently re-ceives, adjusted for program growth trends. Additionally, we assume that the state would need to continue determining eligibility for HFP in order to maintain its federal funding, consistent with our assumption for continued eligibility determination for
+Medi-Cal.
+Medicare Would Remain a Distinct Program. Data from the federal Centers for Medicare and Medicaid administration indicate that federal spending for Medicare beneficiaries in the state totaled about $32 billion for personal health care expenditures in 2004 (the most recent available data). It is not clear whether the federal government would agree to shift Medicare beneficiaries in California over to the system. For pur-poses of this analysis, we assume that Medicare would continue to function as it does currently and that the system would not assume responsibility for services that Medi-care now provides to its enrollees. We assume that the system would pay the premiums and other cost-sharing obligations (including any copayments and deductibles) for which Medicare enrollees are responsible, and would also provide benefits that are not
+included in Medicare.
+
+State Health Program Funds
+The SPP would require the commissioner to obtain any necessary agreements so that current state payments for health care services would be paid directly to the system. We assume that such state funds would be available to pay for services provided by the sys-tem. These funds include proceeds of tobacco taxes authorized under Proposition 99 that are currently used for health care purposes and certain state General Fund re-
+sources currently used for programs administered by various state departments.
+
+Hon. Dick Ackerman	19	May 22, 2008
+
+Local Funds
+The SPP would require the state to make arrangements, including waivers, legisla-tion, or other agreements, to obtain “equitable contributions” from counties and other local government agencies. The Governor’s 2008-09 January budget proposal estimated that county realignment funds designated for health and mental health services would exceed $3 billion in 2008-09, and counties would spend funds from additional sources for health purposes as well. Use of these revenues is governed by various state statutes and, in some cases, by the State Constitution. The exact means by which local govern-
+ment health care funds would be transferred to the system is not clear.
+We find it plausible that local governments would be willing to relinquish a signifi-cant portion of the funds they currently spend on health care in exchange for relief from the requirement established under state Welfare and Institutions Code 17000 that local governments provide health care services to indigents. We assume that health and men-tal health realignment funds would be transferred to the system, along with local health funds generated from tobacco settlement proceeds and other county sources. However, such agreements could be contentious and would require subsequent changes to vari-ous state statutes and potentially the Constitution. To the extent the state was unsuc-cessful in obtaining these agreements, funds totaling over $4 billion in 2011-12 could be
+unavailable.
+
+Health Care Contributions for Retired Public Employees
+In addition to the state and local health program funds discussed above, the state and some local government agencies currently make annual contributions to pay a por-tion of the health care coverage costs for their retired employees who qualify for health benefits. Our estimates assume that the state contributions would be available for redi-rection to the SPP, but we assume no redirection of any similar local government con-
+tributions.
+State Retiree Health Contributions. Our review indicates that the state contributions for retiree health benefits in 2007-08 total $1.5 billion. We consider it probable that the state would be able to redirect these funds for use in paying the costs of the SPP, and
+our projections include resources exceeding $2 billion in 2011-12 from this source.
+However, our review also indicates that certain legal ambiguities exist regarding the extent of the state‘s obligations to its retirees under the SPP. Under current law, many of these retirees currently pay a small percentage or possibly no share of their health care premiums. Under the SPP, these retirees would pay 11.5 percent of certain nonwage in-come as taxes, which may be viewed as an increase in health care costs borne by the re-tirees. We view it as possible that retirees would contest such changes to their overall health-related costs in court. If so, it is possible that the state would be legally obligated
+to hold retirees harmless under the SPP, including from any tax effects. Such an out-
+
+Hon. Dick Ackerman	20	May 22, 2008
+
+come could mean the state would use its retiree health care contributions to offset retir-
+ees’ tax obligations, resulting in the loss of some or all of these funds to the SPP.
+Local Retiree Health Contributions. Our review indicates that there is wide varia-tion among retiree health arrangements for local public agencies. There is also limited data regarding the amounts that local governments currently contribute toward retiree health care costs. Therefore, our projections do not include any such contributions as resources for the SPP. To the extent that such funds could be identified, the resources available to the SPP would increase. However, these funds would be subject to similar
+legal ambiguities as those described above for state retiree contributions. Administration Issues
+Implementation Assumed for 2011
+The SPP requires the new health care coverage to begin within two years of the date that the Secretary of California Health and Human Services certifies that sufficient revenues would be available. Due to the time needed for the Secretary to verify that suf-ficient revenues are available and for the agency to prepare to launch the system, we assume that coverage under the system would begin January 1, 2011. We assume that
+the new taxes proposed by the SPP would take effect at that same time.
+
+Administrative Savings Levels
+Administrative Savings Under Single Payer. Proponents of single-payer systems ar-gue that a reduction in health care administration costs resulting from a single, system-wide payer would be sufficient to offset all or most of the cost increases of providing universal health care coverage. Under the state’s current system, the need for most hos-pitals and physicians to arrange for billing under multiple sets of benefit plans, cost-sharing requirements, and payment methods and systems clearly results in higher ad-ministrative costs than would be the case if there were only one set of benefits, cost-sharing requirements, and payment methods and systems. Additionally, competing health insurers in a multi-payer system likely incur marketing costs and some duplica-tive investments in administrative infrastructure, such as claims payment systems, that
+could be avoided under a single-payer arrangement.
+Provider Administrative Savings Estimates Differ. While it appears likely that ad-ministrative savings would result under the SPP, the extent of these savings is unclear. Based on a review of provider cost data, the Lewin report estimated that physicians and hospitals could achieve administrative savings of 30 percent and 22 percent, respec-tively. However, other researchers have suggested in a New England Journal of Medi-cine study that administrative savings could reach 40 percent for physicians and
+47 percent for hospitals if provider administration matched levels estimated for Cana-
+
+Hon. Dick Ackerman	21	May 22, 2008
+
+dian providers. In all cases, these savings are presumed to be realized by the single-
+payer system through reduced payments to physicians and hospitals.
+Administrative Savings Estimates Differ. The Lewin report assumed that the single payer would be able to administer the system for 1.9 percent of its health benefit costs, a rate similar to that estimated for the Medicare Program. This contrasts to Lewin’s esti-mate that private insurers in California spend 12.7 percent of benefit costs for admini-stration. A report published by the California Healthcare Foundation suggests that ad-ministration expenses for California health maintenance organizations (HMOs) total
+8.7 percent of benefits costs.
+Specific Factors Likely to Limit Administrative Savings Under the SPP. In addition to the variety of estimates among experts regarding how much a California single-payer system could save for administration, our review indicates that factors specific to the SPP could result in administrative costs for physicians, hospitals, and the system. First, (as described previously) the system would need to continue an eligibility process for Medi-Cal to maintain federal funding for that program, indicating that the current eli-gibility processes for Medi-Cal would likely remain in place to some degree. The state would need to implement a new method for requiring persons who appear to be eligi-ble for Medi-Cal to apply for the program, which would also result in state administra-tive expenses. Also, we assume that Medicare would continue to operate as it currently does, meaning that providers would still need to administer payments and benefits for
+at least one additional payer.
+LAO Assumptions for Provider Administration Savings. Our review indicates that significant savings from reduced costs for physician and hospital administration would be achieved during the forecast period of the system’s operation. The state would real-ize these savings through reduced payments to these providers. However, our estimates assume that savings from these sources would be lower than what could be achieved under some single-payer systems because Medicare and Medi-Cal enrollees would con-tinue to be tracked separately under our assumptions. The continued existence of these programs would increase administration activities somewhat as compared to what would occur if all beneficiaries were covered under one plan. We reduced the savings assumed in the Lewin report by 10 percent to account for this, which increases our cost estimate by $1.5 billion in 2011-12 relative to the Lewin level of savings. Additionally, providers may view the higher payroll taxes as an increase in their administrative costs, and thus be reluctant to accept lower reimbursements than otherwise might be the case. (We discuss the effect of the payroll taxes on employers and employees further below.) To the extent this occurs, lower savings for provider administration may result, and the
+system would incur higher costs.
+
+Hon. Dick Ackerman	22	May 22, 2008
+
+LAO Assumptions for State Administration. Overall, we assume slightly higher administrative costs for the state to operate the single-payer system than were assumed in the Lewin report. This is due in part to costs we believe the state would incur in order to process Medi-Cal eligibility in compliance with federal Medicaid law, which the Lewin report did not include. We assume that the state could achieve general program administrative costs equal to about 2 percent of benefits by the fifth full year of the pro-gram, which is comparable to the current Medi-Cal Program (excluding eligibility de-termination costs). To this cost, we add 50 percent of current projected Medi-Cal costs to determine eligibility in a streamlined manner. These costs would include a new process to identify which residents would be required to apply for Medi-Cal in order to main-
+tain the federal share of funding for Medi-Cal beneficiaries.
+We also assume that administration costs as a percent of benefits would start out higher the first few years of implementation and then decrease over time until about the fifth year, remaining roughly flat thereafter. (The SPP recognizes the likelihood of this sort of gradual reduction in administrative costs by requiring these costs to be less than 10 percent of benefit expenditures by the fifth year of program operations, and less than 5 percent by the tenth year.) We project that the total administrative expenses for the state to administer the SPP would amount to 3.9 percent of health benefit costs in
+2011-12 and decline to 2.9 percent in 2015-16.
+
+Reserve Requirement
+Reserve Equal to One Month’s Costs Assumed. The SPP would require the system to “at all times hold in reserve an amount estimated in the aggregate to provide for the payment of all losses and claims for which the system may be liable.” The SPP also pro-vides that the reserve would be used first to pay system expenses in the event of a late budget. Our review suggests that a prudent reserve should also be large enough to ac-commodate some fluctuation in annual tax receipts, which could be flat in some years (we discuss revenue volatility further below). Based on these considerations, we assume that the reserve would be established to cover one month’s health care costs, or about
+8 percent of annual health care costs.
+Different Reserve Goals May Be Considered. Other goals in establishing a reserve may also be considered. For example, requirements established by DMHC for health care service plans operating in the state set one possible threshold at 4 percent of fee-for-service expenses. Assuming that 50 percent of physician expenses would be paid as fee-for-service, this sort of target would indicate an overall operating reserve of about 2 percent of projected annual expenses, or $6 billion lower than we estimate. However,
+this reserve would provide only enough funds to cover less than two weeks’ health care
+expenses.
+
+Hon. Dick Ackerman	23	May 22, 2008
+
+Other Universal Coverage Fiscal Issues.
+
+Bulk Drug Purchasing Discounts at Risk.
+
+Lewin Estimate Assumes Significant Savings in Purchasing Pharmaceuticals. The Lewin estimate assumes that the single-payer system would achieve savings of almost 25 percent of total current spending as a result of the state’s new bulk drug purchasing power. This savings estimate assumes the state would obtain prices at the midpoint be-tween Medi-Cal prices and the lower prices paid by federal agencies, such as the De-
+partments of Defense and Veterans Affairs.
+Assumed Drug Prices May Not Be Available. The new agency may be unable to ob-tain drugs below Medi-Cal prices, primarily because of federal law governing how drug prices are calculated for purposes of determining federal Medicaid rebates nationwide. If the drug companies agreed to supply drugs to the system at a cost below Medicaid rates, under federal law they would have to simultaneously lower their Medicaid prices for these drugs nationwide. This is because federal law requires that Medicaid pro-grams receive the “best price.” This would be a powerful disincentive for pharmaceuti-
+cal companies to negotiate drug prices below those paid by Medi-Cal.
+Higher Drug Costs Would Decrease Savings Amount. In the event that the new agency does not obtain prices at the level assumed in the Lewin report, costs could in-crease significantly. We assume that savings for drug purchases would be 20 percent lower than those assumed by Lewin, resulting in additional costs of $1 billion in
+2011-12.
+
+Extent of Increase in Health Service Utilization Unclear
+Utilization Increases Likely Under Universal Coverage. The SPP would extend health coverage to millions of California residents who currently have no health cover-age or whose current coverage provides fewer benefits than they would receive under the proposed system. Additionally, the SPP prohibits any copayments or deductibles for the first two years of its operation with certain exceptions. The SPP would permit the system to establish such payments after two years, but would establish annual lim-its for all cost-sharing of $250 for an individual and $500 for a family. These limits are lower than those currently adopted by many private insurance plans, and the SPP does not index the limits for inflation. These two factors would likely lead to significant in-
+creases in use of health care services in California.
+Extent of Utilization Increase Uncertain. The Lewin report estimated that utiliza-tion increases based on these and certain other factors would add over $17 billion in costs in 2006. However, other experts have argued that provider supply limitations may hold down such increases in utilization. According to this argument, even though de-
+mand for health services would be higher, there may not be enough physicians or hos-
+
+Hon. Dick Ackerman	24	May 22, 2008
+
+pital capacity to provide those services. In this event, residents would likely wait longer to receive services than insured persons do under California’s current system. Recent press coverage from Massachusetts indicates that wait times to see primary care physi-
+cians increased substantially following that state’s expansion of health care coverage.
+Other Plan Provisions Could Increase Utilization. Our review indicates that some of the SPP’s provisions would likely encourage higher utilization of services. For exam-ple, the SPP would permit physicians to choose to receive payment on a fee-for-service basis rather than a fixed monthly capitation, which may encourage doctors to prescribe additional procedures. Secondly, the system would rely primarily on after-the-fact re-view of physician practices to control inappropriately high use of services. This practice is less likely to limit use of services than current practices utilized by health insurance companies, HMOs, and Medi-Cal, which require prior authorization for certain health services before they can be provided. For example, the Medi-Cal Program currently employs prior authorization for various hospital, pharmacy, and other services. Medi-Cal reports that 13 percent of pharmacy prior authorization requests are denied. Addi-tionally, the existence of the prior authorization requirement likely deters providers from recommending certain services and submitting requests that they know would not
+be approved.
+LAO Utilization Assumptions. Our review suggests that utilization increases are likely to be somewhat lower than assumed in the Lewin report due to a shortage of physicians to meet the expected increase in health care demand. (We discuss physician supply issues further below.) Specifically, we assume that the utilization increase under the system would be 20 percent lower than projected by the Lewin report, resulting in costs $5 billion lower in 2011-12 than would be the case under the Lewin assumptions. Costs under the system could be lower, however, if physician supply constraints prove more limiting than we assume. Alternatively, costs could be higher if other factors dis-
+cussed above increase utilization by more than we assume. Economic Issues
+Health Care Cost Growth
+Our estimates of health care costs and revenues are highly sensitive to the growth rates assumed both for (1) the period between the most recent available health spending data and the start of the new coverage system, and (2) the growth of health care costs
+and revenues once the new system begins.
+Health Inflation Prior to Single-Payer Coverage. Our analysis used estimates of per-person health costs by age group for 2006 based on the Lewin report. We inflated these costs to 2010, the year prior to single-payer coverage implementation, using national
+per capita health spending projections published by the CMS Office of the Actuary, re-
+
+Hon. Dick Ackerman	25	May 22, 2008
+
+sulting in average per capita health spending increases of 5.5 percent between 2006 and 2010. While we believe these estimates are reasonable, health care inflation can vary significantly from year to year, and variations in growth can have a significant effect on
+total health costs in future years.
+Health Inflation Following Implementation of the SPP. The SPP would require that the system limit the growth of statewide health spending by reference to a variety of factors, including state economic growth over multiple years, the adoption of new health technologies, and population factors. The SPP does not establish a specific growth limit, but instead leaves discretion to the system’s commissioner. It appears likely that the state could limit the system’s health spending through its ability to set payment levels for hospitals and other care providers. However, setting too low a growth rate would risk reducing the availability of services. We assume that health spending following implementation of universal coverage would be limited to roughly the rate of long-term state economic growth, which we estimate to be 5.5 percent. This rate would represent a significant reduction in health cost inflation over current trends and projections, but could be accomplished through more coordinated use of technol-
+ogy and more consistent preventive care.
+We also note that the extent to which the system could control health inflation is a significant factor in determining the long-term fiscal viability of single-payer coverage. If health spending increases could be held below the long-run growth of SPP resources, then the difference between health costs and available revenues would decrease over
+time.
+
+Revenue Uncertainty
+Tax Revenue Inflation. Our revenue estimates are based on payroll data from 2006 and other income tax data from 2005. The tax bases described above were then grown at rates based on an analysis of income tax data going back to 1997. The aggregate growth rate over this period for the SPP tax base is approximately 5.3 percent per year. The his-torical analysis of tax return data indicates variability depending on the specific time period selected. If payroll and other income items grow more slowly than assumed be-tween 2006 and 2011, the revenue estimates presented above will be too high. Con-versely, if payroll and other income items grow more quickly than assumed between
+2006 and 2011, the revenue estimates presented above will be too low.
+Revenue Volatility. The revenue streams designated for funding health care in the SPP will be affected by economic cycles. Therefore, even if the SPP is calibrated so that, in the long run, total revenues equal total costs, there would be some years in which funds for health care would be insufficient to cover expenses. Similarly, there would be
+some years in which revenues would be greater than expenses.
+
+Hon. Dick Ackerman	26	May 22, 2008
+
+Other Revenue Inflation Assumptions. Our estimates uniformly assume that funds to be redirected from the federal government and other state and local programs would continue to grow according to historical trends for those programs. Those growth rates would likely be subject to negotiation as the state sought agreements to obtain funds from federal and local agencies. To the extent that funds from those sources were redi-rected with lower growth rates than suggested by recent trends, the revenue estimates
+presented above will be too high.
+
+General Equilibrium Effects
+As described above, the SPP imposes new taxes on businesses and individuals. A portion of these taxes would offset current direct expenditures by businesses and indi-viduals for health care. These reductions would not, however, offset all of the new taxes. Businesses that do not currently provide health benefits to their employees would incur the largest increase in health care costs under the SPP relative to what they are paying under the current system. The size of the tax increase may be large enough to discourage economic activity in California in general. On the other hand, in the long run, the SPP could result in improved efficiency in the health care sector of the economy
+which could, in turn, spur general economic growth.
+
+Potential Health Migration
+The proposed system would provide coverage to California residents at substan-tially lower direct cost than is likely to be available to some persons in other states. The system could thereby create significant financial incentives for uninsured or underin-sured persons from other states to seek to establish residency in California in order to obtain less expensive health care. The SPP would require the commissioner to establish guidelines to prevent an influx of persons to the state for health care purposes, but does not establish specific practices. The specific policies established by the SPP to determine residency and to deter health migration would significantly affect the costs associated
+with this risk.
+
+Potential for Cost Containment
+Your request also asked us to assess what measures could be used to contain costs
+and what their effectiveness might be.
+The SPP Provides for Possible Cost Control Measures. The SPP would require the commissioner to convene the Healthcare Policy Board should statewide cost control measures appear necessary. The SPP lists a variety of specific measures that the com-missioner and the Healthcare Policy Board could enact statewide. Among these are im-provements in “efficiency and quality,” postponement of new benefits, imposition of certain copayments, and reductions in payments for health care providers, managers,
+drugs, or medical equipment. Additionally, the SPP would permit the system to seek.
+
+Hon. Dick Ackerman	27	May 22, 2008
+
+statutory authority for a temporary decrease in benefits. Should these cost controls ap-pear insufficient, the SPP would require the Healthcare Policy Board to report to the Legislature and recommend measures to correct the shortfall, including an increase in
+the tax rates proposed by the SPP.
+Effectiveness of Some Cost Controls Unclear. Some cost control measures author-ized by the SPP would likely be ineffective in the short run. For example, efforts to in-crease efficiency may yield long-term savings but generally are unlikely to produce the immediate, short-term cost reductions necessary to address a significant revenue short-fall. The measures most likely to produce short-term savings would be the imposition of copayments and a reduction in payments for services or drugs. However, restrictions included in the SPP for copayments, such as hardship exemptions and relatively low out-of-pocket spending limits, would reduce the effectiveness of copayments. Reduc-tions in payments to providers would be effective in holding costs down in the short term. In the long term, however, such payment restrictions could have undesirable con-sequences such as reductions in the willingness of providers to work in California. Lastly, a reduction in benefits could effectively reduce costs, but the SPP would not
+permit this cost control measure without statutory changes.
+
+ADDITIONAL EFFECTS OF THE SINGLE-PAYER PROPOSAL
+Your letter also requested that we evaluate certain additional effects of the single-payer proposal in California. In this section, we address your questions regarding the system’s potential effects on physician supply in the state and on employers and em-
+ployees.
+
+Potential Effects on Health Care Workforce Supply
+You requested that we assess California’s current medical workforce needs and the effect the SPP might have on the present and future supply of physicians and nurses. Below, we provide some background information on health care worker supply and
+discuss some possible effects.
+Background. An adequate supply of physicians, both primary care and specialists, is a necessary component of an effective, quality health care system. The exact number of physicians necessary to support the health care system depends upon many factors, in-cluding general demographic trends, physician workforce characteristics, and the de-mand for health care services. Because physicians take a long time to train at great ex-pense, physician shortages can have a long-term impact upon the health care system
+that is not easily remedied.
+
+Hon. Dick Ackerman	28	May 22, 2008
+
+Future Physician Shortages May Exist Under Current System. Several current esti-mates of physician supply predict potential physician shortages both nationally and for California. A 2004 University of Albany study completed for the University of Califor-nia Office of Health Affairs forecasted a number of scenarios concerning the potential growth in demand for physicians compared to the supply of physicians available to treat demand. Under almost every scenario, the growth in demand for physician ser-vices outpaced the supply of physicians. In a baseline forecast, where insurance cover-age, demand for services, and physician supply were held constant, demand was pre-dicted to outpace supply by 1.8 percent. However, other scenarios forecasted demand outpacing supply by almost 18 percent. A number of factors influenced the outcome of the forecasts, including the aging of the California population and the current trend to-
+wards physicians working fewer hours.
+Effect of Single-Payer System Unknown. A switch to single-payer coverage will likely greatly affect both the demand and supply for physicians within California, though the extent to which a physician shortage might exist is largely uncertain. The provision of health benefits to the entire population would increase the demand for health care services, as discussed above. However, though demand would increase in the short run, effects on long-term demand are uncertain. Depending on how the com-missioner decided to institute cost-control measures or measures restricting the provi-sion of services deemed less medically necessary, the future demand for health care
+services could slow compared to current demand.
+The effect on supply would depend primarily upon physician rates. A large portion of California’s physician workforce currently originates from outside of the state. The implementation of a single-payer system and the potential of lower physician salaries, when compared to other states, could deter future physicians from starting their prac-tices in California. The extent to which existing physicians in California saw their sala-ries significantly decline could also precipitate a movement out of state by these physi-
+cians.
+
+Potential Effects on Employers and Employees
+The SPP would change the basic approach to funding health care in California from the current approach that is based on purchasing insurance for each health care recipi-ent to a system of taxing earnings. This would result in significant changes in who pays for health care. Over the long run, these changes could affect employee and employer
+behavior in various ways. We discuss the major impacts below.
+Family Size. The proposal would shift costs from large families to individuals. Un-der the current system, family structure is an important determinant of health care costs. Figure 4 shows projected 2011 average employer and employee contributions (in-
+cluding both employee premium payments and out-of-pocket expenses) to health care.
+
+Hon. Dick Ackerman	29	May 22, 2008
+
+costs for Californians with employer-provided health insurance. Under the current sys-tem, total health care costs for the average family are almost three times those for the average single adult. Under the SPP, the number of people in an employee’s family would not affect contributions to the health care system. Instead, only earnings would matter. Thus, a single adult with annual wages of $50,000 would pay as much as a co-
+worker with the same wages and a family of five. Figure 4
+Projected Average Health Care Costs In Californiaa.
+
+(2011)
+
+Employee costs Employer costs
+Totals.
+
+Single Adult.
+
+$1,825 5,300
+
+$7,125
+
+Family.
+
+$7,125 12,425
+
+$19,550
+
+a Includes health insurance premiums and out-of-pocket expenses for recipients of employer-provided health insurance.
+
+Income. The SPP would shift costs from low-income taxpayers to higher-income taxpayers. Figure 5 shows the proposed payroll taxes for an employee at various in-
+come levels.
+
+Figure 5
+Payroll Taxes at Different Wage Levels Under SPP
+
+Wage
+Employer tax Employee tax
+Total Taxes.
+
+$50,000
+3,440 1,720
+
+$5,160
+
+$100,000
+7,440 3,720
+
+$11,160
+
+$150,000
+11,440 5,720
+
+$17,160
+
+$200,000
+15,440 7,720
+
+$23,160
+
+Comparing Figures 4 and 5, we see that the combined payroll taxes ($11,160) on an employee earning $100,000 would be greater than projected total costs for a single per-son ($7,125), but substantially less than projected total costs for a family ($19,550). An employee earning $200,000 would pay more in employee payroll taxes ($7,720) than the
+projected total employee costs for families ($7,125) under the current system.
+
+Hon. Dick Ackerman	30	May 22, 2008
+
+Wages Versus Unearned Income. The SPP’s $200,000 ceiling on taxable earnings is applied separately to wages and unearned income. Thus a taxpayer with $400,000 in wages will be taxed on only $193,000 ($200,000 less the $7,000 exemption), whereas a taxpayer with $200,000 in wages and $200,000 in unearned income will be taxed on $193,000 of wages and $200,000 of unearned income, or a total of $393,000. In this case, the second taxpayer would pay an additional $23,000 in total taxes even though the two
+taxpayers had identical total incomes.
+Impact of the $7,000 Exemption on Employment. The exemption from taxation on the first $7,000 of wages could tax some families with the same total earnings differently depending on how many different sources of income they have. For example, a family with a single wage earner earning $80,000 would benefit from a $7,000 exemption and be taxed on $73,000. A family in which two different people earned $40,000 each would have the same $80,000 in wages. Each wage earner would, however, receive a $7,000 ex-emption, so they would only be taxed on $66,000 of wages. For the first family, there-fore, the employer would pay an additional tax of $560 and the employee an additional
+tax of $280.
+Health Care Portability. Under our current system, many employees are reluctant to leave their current employers because of the changes in their health care coverage that would result. Under the SPP, Californians would receive the same health care bene-fit regardless of employer, therefore, health care considerations will not prevent people from making otherwise desirable job switches. In the long run, this should enhance the
+efficiency of the California labor market.
+Wage Adjustments in the Economy. Employers would respond to changes in the cost of employees under the SPP in various ways. Some employers, for instance, would hire more lower-paid employees and fewer higher-paid employees as a way to reduce the amount of new taxes paid. Alternatively, employers may try to reduce wages paid to employees whose cost has increased, and be willing to offer higher wages to those whose cost has decreased. For employees whose wages are more than the $200,000 tax-able ceiling, employers also could shift the composition of compensation by replacing compensation that generates nonwage income with additional wage income in order to
+reduce the total tax burden.
+In the long run, these employment effects could have significant impacts on the Cali-fornia economy. The incentives for using low-wage workers, for example, could en-courage net migration out of California for high-wage employees and migration into California for low-wage employees. The net impact of the different incentives on the
+economy cannot be determined.
+
+Hon. Dick Ackerman	31	May 22, 2008
+
+CONCLUSION
+Any plan to reform the state’s health care system, by the nature of its complexity, will involve financial risk over the long term. Many of the fiscal risks discussed in this letter would be shared by a variety of health reform plans. Our analysis indicates that the state would face significant shortfalls over a five-year period should the SPP be im-
+plemented in its current form.
+If you have any questions regarding our analysis, please contact me at 445-4656.
+
+Sincerely,
+
+Elizabeth G. Hill
+Legislative Analyst

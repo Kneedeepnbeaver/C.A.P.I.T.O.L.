@@ -1,0 +1,20 @@
+RESOLUTION NO: 55
+TITLE: Resolution on AI Ethics in Public Governance
+DATE: 2026-04-01
+SPONSOR: Committee on Technology & Privacy
+
+WHEREAS, Artificial Intelligence (AI) systems are increasingly being deployed in public sector decision-making; and
+
+WHEREAS, Algorithmic bias and lack of transparency can undermine public trust in government institutions; and
+
+WHEREAS, The privacy of citizens must be paramount in the adoption of any new technology;
+
+NOW, THEREFORE, BE IT RESOLVED BY THE STATE ASSEMBLY:
+
+1. That all AI systems used for public benefits determination must undergo an independent algorithmic audit for bias before deployment.
+
+2. That a "Human-in-the-Loop" policy be established, requiring final human review for any high-stakes decisions affecting individual rights.
+
+3. That all public agencies must disclose a register of AI tools currently in use, their purpose, and the data they consume.
+
+4. That the use of facial recognition technology by law enforcement agencies be suspended pending the establishment of strict oversight regulations.

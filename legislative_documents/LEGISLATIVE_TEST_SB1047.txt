@@ -1,0 +1,31 @@
+Title: Support for SB 1047 (Wiener)
+--- BODY ---
+September 15, 2024
+
+Senator Scott Wiener
+State Capitol, Room 5100
+Sacramento, CA 95814
+
+Re: SB 1047 (Wiener) - SUPPORT
+
+Dear Senator Wiener,
+
+On behalf of the AI Safety Coalition, I am writing to express our strong support for SB 1047, the Safe and Secure Innovation for Frontier Artificial Intelligence Models Act.
+
+SB 1047 establishes critical guardrails for the development of large-scale artificial intelligence models. As AI systems become more powerful, the potential for catastrophic risks increases. This bill takes a proactive approach by requiring developers of "covered models" to implement reasonable safety protocols, including the ability to shut down the model if necessary (the "kill switch" provision).
+
+Our support is based on the following key arguments:
+1. **Prevention of Catastrophic Harm**: The bill focuses on models that have sufficient compute power to cause mass destruction or facilitate cyberattacks on critical infrastructure.
+2. **Whistleblower Protections**: It ensures that employees of AI labs can report safety concerns without fear of retaliation.
+3. **CalCompute**: We strongly endorse the creation of CalCompute to democratize access to computing resources for academic and public sector researchers, ensuring that safety research isn't monopolized by private industry.
+
+While some industry groups argue this will stifle innovation, we believe that trust is the foundation of adoption. Without safety standards, the public will lose faith in these technologies, which would ultimately be far more damaging to the ecosystem.
+
+For these reasons, the AI Safety Coalition urges a "AYE" vote on SB 1047.
+
+Sincerely,
+
+Jane Doe
+Executive Director, AI Safety Coalition
+jane.doe@aisafetycoalition.org
+(415) 555-0123

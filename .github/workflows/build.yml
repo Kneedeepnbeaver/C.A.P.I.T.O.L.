@@ -1,0 +1,71 @@
+name: Build/Release
+
+on:
+  push:
+    tags:
+      - 'v*' # Trigger on version tags like v1.0.0
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: electron-app/package-lock.json
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # Use a stable version for packaging
+          cache: 'pip'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r electron-app/requirements.txt
+        shell: bash
+
+      - name: Build Python Backend
+        run: |
+          cd electron-app
+          python build_python.py
+        shell: bash
+
+      - name: Install Node Dependencies
+        run: |
+          cd electron-app
+          npm ci
+
+      - name: Build React App
+        run: |
+          cd electron-app
+          npm run build
+
+      - name: Build Electron App
+        uses: samuelmeuli/action-electron-builder@v1
+        with:
+          package_root: electron-app
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          release: true # Publish artifacts to GitHub Releases
+          # macOS specific: Notarization would go here if you had secrets
+          # For ad-hoc signing (Mac), we might need extra steps if not using samuelmeuli's defaults
+          # But for now, let's rely on electron-builder's default behavior or add args
+          args: "--config.mac.identity=null" # Force ad-hoc / unsigned for now to match local success
+
+      - name: Upload Artifacts (if release fails)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}-build
+          path: electron-app/release/*

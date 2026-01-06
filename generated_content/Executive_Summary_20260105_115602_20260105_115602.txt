@@ -1,0 +1,1 @@
+Error: Generation timed out. Try phi3:latest for faster results.

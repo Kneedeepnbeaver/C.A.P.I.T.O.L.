@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2026 Dylan Carpowich
+Arts by Dylan (artsbydylan.com)
+
+Vibe-coded with AI software from Google and Microsoft
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## About C.A.P.I.T.O.L.
+
+**Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking**
+
+A privacy-focused, local-first AI assistant for legislative analysis. Built for legislative professionals working with public domain information, in the spirit of Ollama and other open-source AI tools.
+
+### Key Features
+- 🔒 100% Local & Private - Your data never leaves your computer
+- 🚀 Powered by Ollama - Free, open-source LLM runtime
+- 📚 RAG-Enhanced - Intelligent document analysis
+- 🎯 Legislative Focus - Purpose-built for policy work
+
+### Credits
+- **Created by:** Dylan Carpowich (Arts by Dylan)
+- **Website:** artsbydylan.com
+- **Development:** Vibe-coded with AI assistance from Google and Microsoft
+- **Built with:** Electron, React, Python, Ollama
+- **Inspired by:** The open-source AI community
+
+### Public Domain Mission
+Designed for legislative professionals who work with public domain information. This tool respects the open nature of civic data and contributes to transparent, accessible governance.

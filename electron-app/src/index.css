@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-brand-primary: var(--color-primary);
+  --color-brand-accent: var(--color-accent);
+}
+
+@layer base {
+
+  :root {
+    --color-primary: #d97706;
+    /* amber-600 (gold) */
+    --color-accent: #9333ea;
+    /* purple-600 (classical) */
+  }
+
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    @apply antialiased overflow-hidden;
+  }
+
+  /* Custom Scrollbar for a premium feel */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    /* gray-600 */
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6b7280;
+    /* gray-500 */
+  }
+
+  /* Dark mode scrollbar */
+  .dark ::-webkit-scrollbar-thumb {
+    background: #374151;
+    /* gray-700 */
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #4b5563;
+  }
+}
+
+/* High Contrast Modes */
+
+:root.high-contrast-light {
+  --color-primary: #0000ff;
+  /* Pure Blue */
+  --color-accent: #ff00ff;
+  /* Pure Magenta */
+  background-color: #ffffff;
+  color: #000000;
+}
+
+:root.high-contrast-light .glass-panel {
+  @apply bg-white border-2 border-black shadow-none;
+}
+
+:root.high-contrast-light button,
+:root.high-contrast-light input {
+  @apply border-2 border-black;
+}
+
+:root.high-contrast-dark {
+  --color-primary: #00ffff;
+  /* Cyan */
+  --color-accent: #ffff00;
+  /* Yellow */
+  background-color: #000000;
+  color: #ffffff;
+}
+
+:root.high-contrast-dark .glass-panel {
+  @apply bg-black border-2 border-white shadow-none;
+}
+
+:root.high-contrast-dark button,
+:root.high-contrast-dark input,
+:root.high-contrast-dark select,
+:root.high-contrast-dark textarea {
+  @apply border-2 border-white;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}
+
+.glass-panel {
+  @apply bg-white dark:bg-gray-800 shadow-xl border border-gray-200 dark:border-gray-700 rounded-xl;
+}

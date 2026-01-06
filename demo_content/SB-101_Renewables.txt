@@ -1,0 +1,18 @@
+BILL NO: SB-101
+TITLE: Renewable Energy Infrastructure Incentives
+DATE: 2026-02-10
+SPONSOR: Senator Marcus Thorne
+
+SECTION 1. PURPOSE
+To accelerate the transition to 100% clean energy by providing financial incentives for grid modernization and residential solar adoption.
+
+SECTION 2. RESIDENTIAL SOLAR TAX CREDIT
+(a) Homeowners who install solar panels between 2026 and 2030 shall be eligible for a tax credit equal to 40% of the installation cost.
+(b) This credit is refundable and transferable.
+
+SECTION 3. GRID MODERNIZATION GRANT PROGRAM
+(a) A fund of $2 billion is established to support utility companies in upgrading transmission lines to handle variable renewable energy loads.
+(b) Priority is given to projects that enhance grid resilience against wildfires and extreme weather events.
+
+SECTION 4. BATTERY STORAGE
+(a) The Public Utilities Commission shall mandate that all new utility-scale solar projects include a minimum of 4 hours of battery storage capacity.

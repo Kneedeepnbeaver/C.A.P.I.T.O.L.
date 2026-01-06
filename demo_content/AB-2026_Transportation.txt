@@ -1,0 +1,25 @@
+BILL NO: AB-2026
+TITLE: Future Transportation & Urban Mobility Act
+DATE: 2026-03-15
+SPONSOR: Assembly Member Sarah Chen
+
+SECTION 1. SHORT TITLE
+This Act may be cited as the "Future Transportation & Urban Mobility Act of 2026".
+
+SECTION 2. FINDINGS
+The Legislature finds and declares that:
+(a) Traditional urban transportation models are becoming unsustainable due to congestion and environmental impact.
+(b) Emerging technologies such as autonomous vehicles and high-speed rail offer significant opportunities for improvement.
+(c) Equitable access to transportation is essential for economic mobility.
+
+SECTION 3. AUTONOMOUS VEHICLE INFRASTRUCTURE
+(a) The Department of Transportation shall establish a pilot program for dedicated autonomous vehicle lanes on major highways.
+(b) Funding of $500 million is allocated for the upgrade of traffic signals to potentially communicate with connected vehicles.
+
+SECTION 4. PUBLIC TRANSIT EXPANSION
+(a) Grants shall be made available to cities with populations over 500,000 to expand light rail systems.
+(b) All new public transit vehicles purchased after 2028 must be zero-emission vehicles.
+
+SECTION 5. MICROMOBILITY SAFETY
+(a) Cities must designate parking zones for shared scooters and bicycles to prevent sidewalk clutter.
+(b) A statewide speed limit of 15 mph is established for electric scooters on public rights-of-way.

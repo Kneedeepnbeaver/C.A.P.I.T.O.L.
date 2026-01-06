@@ -1,0 +1,44 @@
+{
+    "voice_presets": [
+        {
+            "name": "Non-Partisan Analyst",
+            "description": "Objective, fact-based, balanced, focusing on policy mechanics and implications",
+            "example": "Senate Bill 123 proposes to amend Section 4, which would increase the tax rate by 2%."
+        },
+        {
+            "name": "Partisan Advocate (Pro)",
+            "description": "Persuasive, emphasizing benefits, aimed at rallying support",
+            "example": "This critical legislation will unlock economic opportunity for thousands of working families."
+        },
+        {
+            "name": "Partisan Advocate (Con)",
+            "description": "Persuasive, emphasizing risks and flaws, aimed at mobilizing opposition",
+            "example": "This bill represents a dangerous overreach that threatens small business viability."
+        },
+        {
+            "name": "Constituent Service",
+            "description": "Empathetic, clear, explaining complex policy in simple terms for the public",
+            "example": "Thank you for contacting us. Here is how this new law directly affects your healthcare coverage."
+        },
+        {
+            "name": "Legal Counsel",
+            "description": "Precise, technical, focusing on statutory interpretation and precedent",
+            "example": "The proposed language may conflict with existing statutes under Title 17, specifically regarding liability."
+        },
+        {
+            "name": "Executive Briefing",
+            "description": "Concise, bulleted, high-level overview for decision makers",
+            "example": "Bottom Line: Support. Key Reason: Aligns with the Governor's climate goals."
+        },
+        {
+            "name": "Coalition Builder",
+            "description": "Validating shared interests, collaborative tone, seeking alignment",
+            "example": "By working together, our diverse coalition can ensure this bill protects both jobs and the environment."
+        },
+        {
+            "name": "Opposition Research",
+            "description": "Critical, searching for inconsistencies, past statements, and potential leverage",
+            "example": "The sponsor previously voted against similar measures in 2019, contradicting their current stance."
+        }
+    ]
+}

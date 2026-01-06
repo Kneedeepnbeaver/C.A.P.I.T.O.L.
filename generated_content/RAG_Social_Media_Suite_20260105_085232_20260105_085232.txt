@@ -1,0 +1,35 @@
+# Social Media Suite
+
+The social media suite for this project will be focused on creating a platform to discuss and raise awareness about water pollution in Imperial Beach, California. The goal is to create a space for community members to share their concerns, ask questions, and receive information about the issues affecting their local environment.
+
+## Discussion Points
+
+*   The importance of addressing water pollution in Imperial Beach and its impact on public health
+*   The role of regulatory authorities in managing pollution and ensuring quality of life
+*   The need for community engagement and education to raise awareness about the issue
+*   Potential solutions, such as waste tire management and air purifiers, and their effectiveness in reducing pollution
+
+## Source Citations
+
+1.  **California State Parks**: "Silver Strand State Beach" <https://www.parks.ca.gov/?page_id=1225>
+2.  **Seiu Local 221**: "Union President Crystal Irving Testifies Before Congress" <https://seiu221.org/news/union-president-crystal-irving-testifies-before-congress/>
+3.  **IBWC (Interbasin Water Commission)**: "IBWC Regional Board" <https://ibwc.ca.gov/)
+4.  **National Institute of Environmental Health Sciences**: "Air Pollution and Human Health" <https://www.niehs.nih.gov/health/topics/agents/air-pollution/index.cfm>
+
+## Next Steps
+
+1.  Create a social media platform (e.g., Facebook group, Twitter account) to discuss water pollution in Imperial Beach
+2.  Reach out to local community members and organizations to raise awareness about the issue
+3.  Collaborate with regulatory authorities to advocate for policy changes that address water pollution
+
+**Social Media Posts**
+
+*   "Did you know that Imperial Beach has some of the worst air quality in the country? Let's work together to create change! #ImperialBeach #CleanAir"
+*   "Water pollution is a major concern in our community. What are some ways we can address this issue? Share your thoughts and ideas! #WaterPollution #ImperialBeach"
+
+**Hashtags**
+
+*   \#ImperialBeach
+*   \#CleanAir
+*   \#WaterPollution
+*   \#CaliforniaConservation

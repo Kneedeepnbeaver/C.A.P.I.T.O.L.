@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+venv
+.venv
+__pycache__
+
+# Build Output
+electron-app/release
+electron-app/dist
+electron-app/dist-python
+electron-app/build/python-temp
+*.dmg
+*.pkg
+*.app
+
+# OS / IDE
+.DS_Store
+.vscode
+.idea

@@ -1,0 +1,23 @@
+# Legislative Analysis Tool - RAG System Requirements
+
+# Core dependencies (required)
+flask>=2.3.0
+flask-cors>=4.0.0
+pandas>=2.0.0
+requests>=2.31.0
+
+# Document processing
+pdfplumber>=0.10.0
+python-docx>=1.1.0
+markdown>=3.5.0
+
+# RAG system - Basic (required for chunking and keyword search)
+tiktoken>=0.5.0  # Token counting
+
+# RAG system - Advanced (optional, for semantic search)
+sentence-transformers>=2.2.0  # Semantic search with embeddings
+numpy>=1.24.0  # Required by sentence-transformers
+
+# Optional: For better performance
+# faiss-cpu>=1.7.4  # Fast similarity search (CPU version)
+# faiss-gpu>=1.7.4  # Fast similarity search (GPU version, requires CUDA)

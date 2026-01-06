@@ -1,0 +1,299 @@
+import { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { Save, FolderOpen, Wand2, FileText, Layout, Cpu, MessageSquare } from 'lucide-react';
+import clsx from 'clsx';
+
+interface AnalysisProps {
+    selectedDocs: any[]; // The full metadata objects
+}
+
+declare global {
+    interface Window {
+        electron: {
+            selectFolder: () => Promise<string[]>;
+            selectFiles: () => Promise<string[]>;
+            saveFile: (options: any) => Promise<string | undefined>;
+        }
+    }
+}
+
+export function Analysis({ selectedDocs }: AnalysisProps) {
+    const [artifactType, setArtifactType] = useState('Executive Summary');
+    const [tone, setTone] = useState('Professional');
+    const [instructions, setInstructions] = useState('');
+    const [result, setResult] = useState('');
+    const [loading, setLoading] = useState(false);
+
+    // New states for dynamic models and presets
+    const [models, setModels] = useState<string[]>([]);
+    const [selectedModel, setSelectedModel] = useState<string>('');
+    const [presets, setPresets] = useState<any[]>([]);
+    const [autoSavedPath, setAutoSavedPath] = useState<string | null>(null);
+
+    const [exportFormat, setExportFormat] = useState('Markdown');
+    const [exportStyle] = useState('Professional');
+
+    useEffect(() => {
+        const fetchConfig = async () => {
+            try {
+                const mRes = await fetch('http://localhost:5001/models');
+                const mData = await mRes.json();
+                setModels(mData);
+                if (mData.length > 0) setSelectedModel(mData[0]);
+
+                const pRes = await fetch('http://localhost:5001/presets');
+                const pData = await pRes.json();
+                setPresets(pData);
+            } catch (err) { console.error("Failed to fetch analysis config", err); }
+        };
+        fetchConfig();
+    }, []);
+
+    const generate = async () => {
+        if (selectedDocs.length === 0) {
+            alert("Please select documents in the Library first.");
+            return;
+        }
+
+        setLoading(true);
+        try {
+            const res = await fetch('http://localhost:5001/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    selected_docs: selectedDocs,
+                    artifact_type: artifactType,
+                    tone: tone,
+                    instructions: instructions,
+                    model: selectedModel
+                })
+            });
+
+            if (!res.ok) {
+                const errorText = await res.text();
+                throw new Error(`Server error (${res.status}): ${errorText}`);
+            }
+
+            const data = await res.json();
+            setResult(data.markdown);
+            setAutoSavedPath(data.auto_saved_path || null);
+            if (data.auto_saved_path) {
+                console.log("Auto-saved to:", data.auto_saved_path);
+            }
+        } catch (err) {
+            console.error("Generation error:", err);
+            alert("Generation failed: " + (err instanceof Error ? err.message : String(err)));
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const save = async () => {
+        if (!result) return;
+        try {
+            const res = await fetch('http://localhost:5001/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    content: result,
+                    format: exportFormat,
+                    style: exportStyle
+                })
+            });
+            const data = await res.json();
+            if (data.path) alert(`Saved to: ${data.path}`);
+        } catch (err) { alert("Save failed: " + err); }
+    };
+
+    const exportAs = async () => {
+        if (!result) return;
+
+        try {
+            const formats = [
+                { name: 'Markdown', extensions: ['md'] },
+                { name: 'HTML', extensions: ['html'] },
+                { name: 'Text', extensions: ['txt'] },
+                { name: 'Word Document', extensions: ['docx'] },
+            ];
+
+            const savePath = await window.electron.saveFile({
+                title: 'Export Analysis',
+                defaultPath: `analysis_${Date.now()}`,
+                filters: formats
+            });
+
+            if (savePath) {
+                const res = await fetch('http://localhost:5001/save-as', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ content: result, path: savePath })
+                });
+                const data = await res.json();
+                if (data.path) alert(`Exported to: ${data.path}`);
+            }
+        } catch (err) { alert("Export failed: " + err); }
+    };
+
+    const openFolder = async () => {
+        await fetch('http://localhost:5001/open-folder', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ folder: 'results' })
+        });
+    };
+
+    const artifactTypes = [
+        { id: "Executive Summary", desc: "High-level overview of key issues." },
+        { id: "Talking Points (Pro)", desc: "Arguments in support." },
+        { id: "Talking Points (Con)", desc: "Arguments in opposition." },
+        { id: "Vote Recommendation", desc: "Internal memo with advice." },
+        { id: "Coalition Letter", desc: "Draft letter for support." },
+        { id: "Opposition Research", desc: "Vendor analysis of weaknesses." },
+    ];
+
+    return (
+        <div className="flex h-full bg-gray-50/50 dark:bg-black/95 text-gray-900 dark:text-gray-100">
+            {/* Configuration Pane */}
+            <div className="w-[450px] border-r border-gray-200 dark:border-gray-800 flex flex-col bg-white dark:bg-gray-900/50 backdrop-blur-sm z-10 transition-all">
+                <div className="p-6 border-b border-gray-200 dark:border-gray-800">
+                    <h2 className="text-xl font-bold flex items-center gap-2 mb-1">
+                        <Wand2 className="text-blue-500" size={24} />
+                        Analysis Engine
+                    </h2>
+                    <p className="text-sm text-gray-500">Transform documents into intelligence.</p>
+                </div>
+
+                <div className="flex-1 overflow-y-auto p-6 flex flex-col gap-8">
+
+                    {/* Model Selection */}
+                    <div>
+                        <label className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 block flex items-center gap-2">
+                            <Cpu size={14} /> LLM Engine
+                        </label>
+                        <select className="w-full bg-white dark:bg-gray-900/80 border border-gray-200 dark:border-gray-700 rounded-xl p-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none shadow-sm"
+                            value={selectedModel} onChange={e => setSelectedModel(e.target.value)}>
+                            {models.map(m => <option key={m} value={m}>{m}</option>)}
+                            {models.length === 0 && <option>No models found (Check Ollama)</option>}
+                        </select>
+                    </div>
+
+                    {/* Context */}
+                    <div>
+                        <label className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 block">Context</label>
+                        <div className="bg-blue-50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/50 rounded-xl p-4 flex items-center gap-3">
+                            <div className="bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200 w-10 h-10 rounded-lg flex items-center justify-center font-bold">
+                                {selectedDocs.length}
+                            </div>
+                            <div>
+                                <div className="font-medium text-sm text-blue-900 dark:text-blue-100">Selected Documents</div>
+                                <div className="text-[10px] text-blue-600 dark:text-blue-400 truncate max-w-[280px]">
+                                    {selectedDocs.map(d => d.Filename).join(", ") || "None selected"}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Artifact Type */}
+                    <div>
+                        <label className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 block">Analysis Goal</label>
+                        <div className="grid grid-cols-2 gap-2">
+                            {artifactTypes.map((t) => (
+                                <button key={t.id} onClick={() => setArtifactType(t.id)}
+                                    className={clsx(
+                                        "text-left p-2.5 rounded-lg border transition-all group",
+                                        artifactType === t.id
+                                            ? "bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-900/20"
+                                            : "bg-white dark:bg-gray-800/40 border-gray-200 dark:border-gray-700 hover:border-blue-400"
+                                    )}>
+                                    <div className="font-bold text-[13px] leading-tight">{t.id}</div>
+                                    <div className={clsx("text-[10px] mt-0.5 mt-1", artifactType === t.id ? "text-blue-100" : "text-gray-500")}>{t.desc}</div>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Presets & Tone */}
+                    <div>
+                        <label className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3 block flex items-center gap-2">
+                            <MessageSquare size={14} /> Tone / Voice Preset
+                        </label>
+                        <div className="space-y-3">
+                            <select className="w-full bg-white dark:bg-gray-900/80 border border-gray-200 dark:border-gray-700 rounded-xl p-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none shadow-sm"
+                                value={tone} onChange={e => setTone(e.target.value)}>
+                                <option value="Professional">Default: Professional</option>
+                                {presets.map(p => <option key={p.name} value={p.name}>{p.name}</option>)}
+                            </select>
+                            <textarea className="w-full bg-white dark:bg-gray-800/40 border border-gray-200 dark:border-gray-700 rounded-lg p-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none min-h-[80px]"
+                                value={instructions} onChange={e => setInstructions(e.target.value)}
+                                placeholder="Additional context or specific constraints..." />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="p-6 border-t border-gray-200 dark:border-gray-800 bg-gray-50/50 dark:bg-gray-900/50">
+                    <button onClick={generate} disabled={loading || !selectedModel}
+                        className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-4 rounded-xl font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2 transition-all active:scale-[0.98] disabled:opacity-50">
+                        {loading ? <span className="animate-spin text-xl">⏳</span> : <Wand2 size={20} />}
+                        Generate Analysis
+                    </button>
+                </div>
+            </div>
+
+            {/* Preview Pane */}
+            <div className="flex-1 flex flex-col bg-gray-100 dark:bg-[#0d1117] relative">
+
+                <div className="h-16 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between px-6 bg-white dark:bg-gray-900/80 backdrop-blur-sm sticky top-0 z-10">
+                    <span className="font-semibold text-gray-500 text-sm flex items-center gap-2">
+                        <Layout size={16} /> Preview
+                    </span>
+
+                    <div className="flex gap-2">
+                        <div className="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 rounded-lg p-1 mr-2">
+                            {['Markdown', 'HTML', 'DOCX', 'TXT'].map(fmt => (
+                                <button key={fmt} onClick={() => setExportFormat(fmt)}
+                                    className={clsx("px-3 py-1.5 text-xs font-medium rounded-md transition-all",
+                                        exportFormat === fmt ? "bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white" : "text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+                                    )}>
+                                    {fmt}
+                                </button>
+                            ))}
+                        </div>
+                        <button onClick={save} disabled={!result} className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg text-sm font-medium shadow-sm transition-colors disabled:opacity-50">
+                            <Save size={16} /> Save
+                        </button>
+                        <button onClick={openFolder} className="p-2 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 text-gray-600 dark:text-gray-300 rounded-lg transition-colors">
+                            <FolderOpen size={18} />
+                        </button>
+                    </div>
+                </div>
+
+                <div className="flex-1 overflow-y-auto p-8 lg:p-12 relative flex justify-center">
+                    {loading ? (
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-400 gap-6 z-0">
+                            <div className="relative w-20 h-20">
+                                <div className="absolute inset-0 border-4 border-blue-100 dark:border-blue-900/30 rounded-full"></div>
+                                <div className="absolute inset-0 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+                            </div>
+                            <div className="text-center">
+                                <p className="text-lg font-medium text-gray-700 dark:text-gray-200 mb-1">Synthesizing Legislative Intelligence</p>
+                                <p className="text-sm">Powering through the text using {selectedModel}...</p>
+                            </div>
+                        </div>
+                    ) : result ? (
+                        <div className="w-full max-w-4xl bg-white dark:bg-gray-900 shadow-2xl shadow-gray-200/50 dark:shadow-black/50 rounded-xl min-h-[800px] border border-gray-100 dark:border-gray-800 p-12 transition-all">
+                            <div className="prose dark:prose-invert max-w-none prose-headings:font-bold prose-h1:text-4xl prose-h1:pb-4 prose-h1:border-b prose-h1:border-gray-200 dark:prose-h1:border-gray-800 prose-blue prose-p:leading-relaxed prose-li:my-1">
+                                <ReactMarkdown>{result}</ReactMarkdown>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="flex flex-col items-center justify-center h-full text-gray-400 opacity-60">
+                            <FileText size={80} className="mb-6 opacity-10" />
+                            <p className="text-xl font-bold">Workspace Ready</p>
+                            <p className="max-w-sm text-center mt-2 text-sm">Select goals on the left to generate insights.</p>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+}
