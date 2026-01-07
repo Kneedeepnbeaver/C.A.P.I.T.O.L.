@@ -6,9 +6,15 @@ processing and retrieval.
 """
 
 import sys
+# Force unbuffered output for debugging
+sys.stdout.reconfigure(line_buffering=True)
+print("DEBUG: Starting server_rag.py...", file=sys.stdout, flush=True)
+
 import os
 import subprocess
 from pathlib import Path
+
+print("DEBUG: Importing Flask...", file=sys.stdout, flush=True)
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import logging
@@ -18,10 +24,19 @@ import time
 # Current: .../Legislative_Analysis/electron-app/api/server_rag.py
 root_dir = Path(__file__).parent.parent.parent.resolve()
 sys.path.append(str(root_dir))
+print(f"DEBUG: Added {root_dir} to sys.path", file=sys.stdout, flush=True)
 
-import legislative_backend as backend
+print("DEBUG: Importing legislative_backend...", file=sys.stdout, flush=True)
+try:
+    import legislative_backend as backend
+    print("DEBUG: Imported legislative_backend successfully", file=sys.stdout, flush=True)
+except Exception as e:
+    print(f"DEBUG: Failed to import legislative_backend: {e}", file=sys.stdout, flush=True)
+    # Continue to allow app to start even if backend fails
+    backend = None
 
 # Import RAG components
+print("DEBUG: Importing RAG components...", file=sys.stdout, flush=True)
 try:
     from rag import (
         LegislativeChunker,
@@ -30,8 +45,13 @@ try:
         LegislativeRAGAgent
     )
     RAG_AVAILABLE = True
+    print("DEBUG: RAG components imported", file=sys.stdout, flush=True)
 except ImportError as e:
     logging.warning(f"RAG components not available: {e}")
+    print(f"DEBUG: RAG import error: {e}", file=sys.stdout, flush=True)
+    RAG_AVAILABLE = False
+except Exception as e:
+    print(f"DEBUG: RAG General error: {e}", file=sys.stdout, flush=True)
     RAG_AVAILABLE = False
 
 app = Flask(__name__)
@@ -658,4 +678,5 @@ def reset_application():
 if __name__ == "__main__":
     # Run on port 5001 to avoid MacOS AirPlay conflict
     # Turn off debug reloader for stability in this environment
+    print("DEBUG: Starting Flask app run on port 5001...", file=sys.stdout, flush=True)
     app.run(host="127.0.0.1", port=5001, debug=False)
