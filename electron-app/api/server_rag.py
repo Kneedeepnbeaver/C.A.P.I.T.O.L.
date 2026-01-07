@@ -243,11 +243,23 @@ def save_artifact():
 
 @app.route('/sync', methods=['POST'])
 def sync_metadata_route():
-    script_path = root_dir / "extract_legislative_metadata.py"
     try:
-        subprocess.run([sys.executable, str(script_path)], cwd=str(root_dir), check=True)
+        # Import the script dynamically to ensure we get the latest code/state
+        # and to avoid top-level import issues if dependencies aren't ready
+        import importlib.util
+        script_path = root_dir / "extract_legislative_metadata.py"
+        
+        spec = importlib.util.spec_from_file_location("extract_legislative_metadata", script_path)
+        metadata_module = importlib.util.module_from_spec(spec)
+        sys.modules["extract_legislative_metadata"] = metadata_module
+        spec.loader.exec_module(metadata_module)
+        
+        # Run the main function directly
+        metadata_module.main()
+        
         return jsonify({"status": "success"})
     except Exception as e:
+        logging.error(f"Sync error: {e}")
         return jsonify({"status": "error", "message": str(e)}), 500
 
 @app.route('/import/folder', methods=['POST'])
