@@ -63,18 +63,29 @@ def call_ollama(prompt, model=None):
 
 def list_ollama_models():
     """Returns a list of installed Ollama model names."""
-    try:
-        result = subprocess.run(
-            ["ollama", "list"],
-            capture_output=True,
-            text=True
-        )
-        lines = result.stdout.strip().split('\n')
-        if len(lines) <= 1: return []
-        # Skip header, take first column
-        return [line.split()[0] for line in lines[1:] if line.strip()]
-    except:
-        return []
+    
+    # Packaged apps on macOS don't inherit the user's PATH
+    # We must try common installation locations
+    ollama_paths = ["ollama", "/usr/local/bin/ollama", "/opt/homebrew/bin/ollama"]
+    
+    for cmd in ollama_paths:
+        try:
+            result = subprocess.run(
+                [cmd, "list"],
+                capture_output=True,
+                text=True
+            )
+            if result.returncode == 0:
+                lines = result.stdout.strip().split('\n')
+                if len(lines) <= 1: return []
+                return [line.split()[0] for line in lines[1:] if line.strip()]
+        except FileNotFoundError:
+            continue
+        except Exception as e:
+            print(f"Error checking ollama at {cmd}: {e}")
+            continue
+            
+    return []
 
 def get_full_text(filename):
     """Reads the full text of a document from the text directory."""

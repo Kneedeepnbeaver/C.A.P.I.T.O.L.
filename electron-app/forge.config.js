@@ -4,6 +4,7 @@ const path = require('path');
 
 module.exports = {
   packagerConfig: {
+    name: "C.A.P.I.T.O.L.",
     asar: true,
     // Icon without extension (Forge adds .icns/.ico automatically)
     icon: path.join(__dirname, 'resources', 'icon'),
