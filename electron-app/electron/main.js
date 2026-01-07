@@ -12,12 +12,12 @@ let PYTHON_CWD;
 
 if (app.isPackaged) {
     // Production: Use bundled implementation
-    // The executable is located at Contents/Resources/backend/server_rag
-    PYTHON_PATH = path.join(process.resourcesPath, 'backend', 'server_rag');
+    // The executable is located at Contents/Resources/server_rag (Forge flattens extraResources)
+    PYTHON_PATH = path.join(process.resourcesPath, 'server_rag');
     // For executable, the script arg is not needed, but spawn expects an array of args.
     // We pass empty array/no script for the executable.
     SERVER_SCRIPT = null;
-    PYTHON_CWD = path.join(process.resourcesPath, 'backend');
+    PYTHON_CWD = process.resourcesPath;
 } else {
     // Development
     PYTHON_PATH = path.resolve('../../venv/bin/python3');
