@@ -48,7 +48,7 @@ jobs:
       - name: Make (Build & Package)
         run: |
           cd electron-app
-          npm run make
+          npm run make:ci
         shell: bash
         env:
           # Critical: Add project root to PYTHONPATH so `import rag` works in build_python.py

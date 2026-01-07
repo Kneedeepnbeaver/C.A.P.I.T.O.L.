@@ -13,12 +13,14 @@
     "dev:electron": "wait-on tcp:5173 && cross-env ELECTRON_START_URL=http://localhost:5173 electron .",
     "build": "tsc -b && vite build",
     "build:python": "../venv/bin/python3 build_python.py",
+    "build:python:ci": "python build_python.py",
     "dist": "npm run build && npm run build:python && electron-builder",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "electron-forge start",
     "package": "npm run build && npm run build:python && electron-forge package",
-    "make": "npm run build && npm run build:python && electron-forge make"
+    "make": "npm run build && npm run build:python && electron-forge make",
+    "make:ci": "npm run build && npm run build:python:ci && electron-forge make"
   },
   "build": {
     "appId": "com.artsdylan.legislative-analysis",
