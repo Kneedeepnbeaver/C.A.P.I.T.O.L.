@@ -21,6 +21,7 @@ MODEL = "llama3.2:latest"
 VOICE_PRESETS_FILE = BASE_DIR / "legislative_voice_presets.json"
 
 # Ensure output directory exists
+TEXT_DIR.mkdir(exist_ok=True, parents=True)
 OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
 
 def load_voice_presets():
