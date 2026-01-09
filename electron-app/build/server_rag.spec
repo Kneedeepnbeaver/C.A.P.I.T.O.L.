@@ -3,8 +3,14 @@ from PyInstaller.utils.hooks import collect_all
 
 datas = []
 binaries = []
-hiddenimports = ['legislative_backend', 'rag', 'rag.indexer', 'rag.retriever', 'rag.chunker', 'rag.agent', 'tiktoken_ext.openai_public', 'tiktoken_ext', 'sklearn.utils._cython_blas', 'sklearn.neighbors.typedefs', 'sklearn.neighbors.quad_tree', 'sklearn.tree', 'sklearn.tree._utils']
+hiddenimports = ['backend_core', 'backend_core.config', 'backend_core.extractor', 'backend_core.normalizer', 'rag', 'rag.indexer', 'rag.retriever', 'rag.chunker', 'rag.agent', 'tiktoken_ext.openai_public', 'tiktoken_ext', 'sklearn.utils._cython_blas', 'sklearn.neighbors.typedefs', 'sklearn.neighbors.quad_tree', 'sklearn.tree', 'sklearn.tree._utils']
 tmp_ret = collect_all('sentence_transformers')
+datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+tmp_ret = collect_all('tiktoken')
+datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+tmp_ret = collect_all('pandas')
+datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+tmp_ret = collect_all('chromadb')
 datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
 
 

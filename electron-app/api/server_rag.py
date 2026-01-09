@@ -22,18 +22,47 @@ import threading
 import time
 
 # Current: .../Legislative_Analysis/electron-app/api/server_rag.py
-root_dir = Path(__file__).parent.parent.parent.resolve()
-sys.path.append(str(root_dir))
-print(f"DEBUG: Added {root_dir} to sys.path", file=sys.stdout, flush=True)
-
-print("DEBUG: Importing legislative_backend...", file=sys.stdout, flush=True)
+# --- CONFIGURATION & PATHS ---
 try:
-    import legislative_backend as backend
-    print("DEBUG: Imported legislative_backend successfully", file=sys.stdout, flush=True)
+    from backend_core import config
+    from backend_core import extractor
+    print("DEBUG: Imported backend_core successfully", file=sys.stdout, flush=True)
+    BACKEND_IMPORT_ERROR = None
 except Exception as e:
-    print(f"DEBUG: Failed to import legislative_backend: {e}", file=sys.stdout, flush=True)
-    # Continue to allow app to start even if backend fails
-    backend = None
+    print(f"DEBUG: Failed to import backend_core: {e}", file=sys.stdout, flush=True)
+    config = None
+    BACKEND_IMPORT_ERROR = str(e)
+
+# Compatibility aliases
+backend = config  # For code still referencing 'backend' variable
+
+# Determine root directory - handle both dev and packaged modes
+if config and hasattr(config, 'BASE_DIR'):
+    # Use BASE_DIR from config which handles packaged apps correctly
+    root_dir = config.BASE_DIR
+    print(f"DEBUG: Using config.BASE_DIR: {root_dir}", file=sys.stdout, flush=True)
+else:
+    # Fallback: calculate from current file location
+    # Current file: .../Legislative_Analysis/electron-app/api/server_rag.py
+    # Root: .../Legislative_Analysis
+    root_dir = Path(__file__).parent.parent.parent.resolve()
+    print(f"DEBUG: Calculated root_dir from __file__: {root_dir}", file=sys.stdout, flush=True)
+
+# Metadata JSON path - use BASE_DIR when available (handles packaged apps)
+if config and hasattr(config, 'BASE_DIR'):
+    METADATA_JSON = config.BASE_DIR / "legislative_metadata.json"
+else:
+    METADATA_JSON = root_dir / "legislative_metadata.json"
+
+print(f"DEBUG: METADATA_JSON path: {METADATA_JSON}", file=sys.stdout, flush=True)
+print(f"DEBUG: METADATA_JSON exists: {METADATA_JSON.exists()}", file=sys.stdout, flush=True)
+
+if config:
+    TEXT_DIR = config.TEXT_DIR
+    OUTPUT_DIR = config.OUTPUT_DIR
+else:
+    TEXT_DIR = Path("legislative_documents") # Fallback
+    OUTPUT_DIR = Path("generated_content") # Fallback
 
 # Import RAG components
 print("DEBUG: Importing RAG components...", file=sys.stdout, flush=True)
@@ -104,14 +133,20 @@ def health():
 @app.route('/library', methods=['GET'])
 def list_library():
     """Returns the content of legislative_metadata.json"""
-    json_path = root_dir / "legislative_metadata.json"
+    if not METADATA_JSON.exists():
+        print(f"DEBUG: METADATA_JSON not found at {METADATA_JSON}", file=sys.stdout, flush=True)
+        return jsonify([])
     
-    if json_path.exists():
+    try:
         import json
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(METADATA_JSON, 'r', encoding='utf-8') as f:
             data = json.load(f)
+        print(f"DEBUG: Loaded {len(data)} documents from metadata", file=sys.stdout, flush=True)
         return jsonify(data)
-    return jsonify([])
+    except Exception as e:
+        print(f"DEBUG: Error reading METADATA_JSON: {e}", file=sys.stdout, flush=True)
+        logging.error(f"Error reading metadata: {e}")
+        return jsonify([])
 
 @app.route('/library/search', methods=['POST'])
 def search_library():
@@ -130,11 +165,10 @@ def search_library():
             unique_files = set(chunk['file'] for chunk in chunks)
             
             # Get full metadata for these files
-            json_path = root_dir / "legislative_metadata.json"
             full_library = []
-            if json_path.exists():
+            if METADATA_JSON.exists():
                 import json
-                with open(json_path, 'r', encoding='utf-8') as f:
+                with open(METADATA_JSON, 'r', encoding='utf-8') as f:
                     full_library = json.load(f)
             
             filtered_docs = [doc for doc in full_library if doc.get('Filename') in unique_files]
@@ -144,12 +178,11 @@ def search_library():
             # Fall through to original search
     
     # Original search method
-    matching_filenames = backend.search_documents(query)
-    json_path = root_dir / "legislative_metadata.json"
+    matching_filenames = backend.search_documents(query) if backend else []
     full_library = []
-    if json_path.exists():
+    if METADATA_JSON.exists():
         import json
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(METADATA_JSON, 'r', encoding='utf-8') as f:
             full_library = json.load(f)
     
     filtered_docs = [doc for doc in full_library if doc.get('Filename') in matching_filenames]
@@ -164,14 +197,12 @@ def update_library_metadata():
     if not target_filename:
         return jsonify({"error": "Filename is required"}), 400
     
-    json_path = root_dir / "legislative_metadata.json"
-    
-    if not json_path.exists():
-        return jsonify({"error": "Metadata store not found"}), 500
+    if not METADATA_JSON.exists():
+        return jsonify({"error": f"Metadata store not found at {METADATA_JSON}"}), 500
     
     try:
         import json
-        with open(json_path, 'r', encoding='utf-8') as f:
+        with open(METADATA_JSON, 'r', encoding='utf-8') as f:
             library = json.load(f)
         
         updated = False
@@ -184,12 +215,14 @@ def update_library_metadata():
                 break
         
         if updated:
-            with open(json_path, 'w', encoding='utf-8') as f:
+            with open(METADATA_JSON, 'w', encoding='utf-8') as f:
                 json.dump(library, f, indent=2)
+            print(f"DEBUG: Updated metadata for {target_filename}", file=sys.stdout, flush=True)
             return jsonify({"status": "success", "message": "Metadata updated"})
         else:
             return jsonify({"error": "Document not found"}), 404
     except Exception as e:
+        logging.error(f"Error updating metadata: {e}")
         return jsonify({"error": str(e)}), 500
 
 @app.route('/models', methods=['GET'])
@@ -244,18 +277,8 @@ def save_artifact():
 @app.route('/sync', methods=['POST'])
 def sync_metadata_route():
     try:
-        # Import the script dynamically to ensure we get the latest code/state
-        # and to avoid top-level import issues if dependencies aren't ready
-        import importlib.util
-        script_path = root_dir / "extract_legislative_metadata.py"
-        
-        spec = importlib.util.spec_from_file_location("extract_legislative_metadata", script_path)
-        metadata_module = importlib.util.module_from_spec(spec)
-        sys.modules["extract_legislative_metadata"] = metadata_module
-        spec.loader.exec_module(metadata_module)
-        
-        # Run the main function directly
-        metadata_module.main()
+        # Run the extraction directly
+        extractor.run_extraction()
         
         return jsonify({"status": "success"})
     except Exception as e:
@@ -264,29 +287,36 @@ def sync_metadata_route():
 
 @app.route('/import/folder', methods=['POST'])
 def import_folder():
-    data = request.json
-    source_path = data.get('path')
-    if not source_path:
-        return jsonify({"error": "No path provided"}), 400
-    
-    import shutil
-    src = Path(source_path)
-    if not src.exists():
-        return jsonify({"error": "Path not found"}), 404
-    
-    count = 0
-    allowed = ['.txt', '.pdf', '.md', '.docx', '.vtt']
-    if src.is_file():
-        if src.suffix.lower() in allowed:
-            shutil.copy(src, backend.TEXT_DIR / src.name)
-            count = 1
-    elif src.is_dir():
-        for item in src.glob("*"):
-            if item.suffix.lower() in allowed:
-                shutil.copy(item, backend.TEXT_DIR / item.name)
-                count += 1
-    
-    return jsonify({"count": count})
+    if backend is None:
+        return jsonify({"error": f"Backend not initialized: {BACKEND_IMPORT_ERROR}"}), 503
+        
+    try:
+        data = request.json
+        source_path = data.get('path')
+        if not source_path:
+            return jsonify({"error": "No path provided"}), 400
+        
+        import shutil
+        src = Path(source_path)
+        if not src.exists():
+            return jsonify({"error": "Path not found"}), 404
+        
+        count = 0
+        allowed = ['.txt', '.pdf', '.md', '.docx', '.vtt']
+        if src.is_file():
+            if src.suffix.lower() in allowed:
+                shutil.copy(src, backend.TEXT_DIR / src.name)
+                count = 1
+        elif src.is_dir():
+            for item in src.glob("*"):
+                if item.suffix.lower() in allowed:
+                    shutil.copy(item, backend.TEXT_DIR / item.name)
+                    count += 1
+        
+        return jsonify({"count": count})
+    except Exception as e:
+        logging.error(f"Import folder error: {e}")
+        return jsonify({"error": f"Import failed: {str(e)}"}), 500
 
 @app.route('/import/paste', methods=['POST'])
 def import_paste():
@@ -633,7 +663,7 @@ def normalize_transcript_endpoint():
         # Import normalizer
         import sys
         sys.path.insert(0, str(Path(__file__).parent.parent.parent))
-        from transcript_normalizer import normalize_transcript
+        from backend_core.normalizer import normalize_transcript
         
         # Normalize
         normalized_text = normalize_transcript(original_text)

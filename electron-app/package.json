@@ -44,7 +44,7 @@
       },
       {
         "from": "dist-python/server_rag",
-        "to": "backend/server_rag"
+        "to": "server_rag"
       }
     ],
     "mac": {

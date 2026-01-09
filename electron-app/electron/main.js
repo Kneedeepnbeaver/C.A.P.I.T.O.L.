@@ -119,6 +119,8 @@ function createMenu() {
 }
 
 function createWindow() {
+    const isMac = process.platform === 'darwin';
+    
     mainWindow = new BrowserWindow({
         width: 1400,
         height: 900,
@@ -128,7 +130,11 @@ function createWindow() {
             contextIsolation: true,
             sandbox: false // Needed sometimes for local fetch if cors issues arise
         },
-        titleBarStyle: 'hiddenInset', // Mac style
+        // Enable window dragging on all platforms
+        titleBarStyle: isMac ? 'hiddenInset' : 'default',
+        frame: !isMac, // On non-Mac, show frame for dragging
+        // Make window movable/draggable
+        movable: true,
     });
 
     createMenu();

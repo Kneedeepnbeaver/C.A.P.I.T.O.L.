@@ -107,6 +107,9 @@ function App() {
       <div className="flex h-screen bg-white dark:bg-black text-black dark:text-gray-100 font-sans transition-colors duration-200">
         {showWelcome && <Welcome onComplete={completeWelcome} />}
 
+        {/* Draggable region for window movement */}
+        <div className="absolute top-0 left-0 right-0 h-8 drag-region z-50" style={{ WebkitAppRegion: 'drag' } as any}></div>
+
         <Sidebar currentView={currentView} setCurrentView={setCurrentView} status={status} />
 
         <div className="flex-1 overflow-auto">

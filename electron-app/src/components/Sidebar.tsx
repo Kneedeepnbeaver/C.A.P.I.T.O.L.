@@ -83,7 +83,7 @@ export function Sidebar({ currentView, setCurrentView }: SidebarProps) {
     return (
         <div className="w-64 h-full bg-white dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col z-20">
             <div className="p-6">
-                <div className="flex items-center gap-3 mb-8">
+                <div className="flex items-center gap-3 mb-8" style={{ WebkitAppRegion: 'drag' } as any}>
                     {branding.logoUrl ? (
                         <img src={branding.logoUrl} alt="Logo" className="w-10 h-10 rounded-xl object-cover shadow-lg" />
                     ) : (

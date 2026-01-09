@@ -30,7 +30,10 @@ PyInstaller.__main__.run([
     '--paths', str(PROJECT_ROOT),  # Add project root to search path for modules
     
     # Hidden imports that might be missed by static analysis
-    '--hidden-import=legislative_backend',
+    '--hidden-import=backend_core',
+    '--hidden-import=backend_core.config',
+    '--hidden-import=backend_core.extractor',
+    '--hidden-import=backend_core.normalizer',
     '--hidden-import=rag',
     '--hidden-import=rag.indexer',
     '--hidden-import=rag.retriever',
@@ -44,10 +47,14 @@ PyInstaller.__main__.run([
     '--hidden-import=sklearn.tree',
     '--hidden-import=sklearn.tree._utils',
     
+    
     # Collect all data from 'rag' package if needed (though code is usually enough)
     # '--collect-all', 'rag',
     # Sentence transformers often needs data files
     '--collect-all', 'sentence_transformers',
+    '--collect-all', 'tiktoken',
+    '--collect-all', 'pandas',
+    '--collect-all', 'chromadb',  # Just in case future updates use it
 ])
 
 print(f"Build complete. Executable is at: {DIST_DIR / 'server_rag'}")

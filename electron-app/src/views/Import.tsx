@@ -77,8 +77,11 @@ export function Import() {
                     await handleSingleFileImport(paths[i]);
                     setProgress(Math.round(((i + 1) / paths.length) * 100));
                 }
-                addLog("⚡ Syncing metadata...");
-                await fetch('http://localhost:5001/sync', { method: 'POST' });
+                const syncRes = await fetch('http://localhost:5001/sync', { method: 'POST' });
+                if (!syncRes.ok) {
+                    const errData = await syncRes.json().catch(() => ({}));
+                    throw new Error(`Sync failed: ${errData.message || syncRes.statusText}`);
+                }
                 addLog("✨ Minerva is Ready: Sync complete.");
                 setIsImporting(false);
                 setTimeout(() => setProgress(0), 1000);
@@ -147,7 +150,12 @@ export function Import() {
                     const ragData = await ragRes.json();
                     addLog(`✨ Indexed ${ragData.chunks_added} chunks`);
                 } else {
-                    addLog(`⚠️  RAG indexing skipped (may not be a text file)`);
+                    try {
+                        const ragError = await ragRes.json();
+                        addLog(`⚠️  RAG indexing skipped: ${ragError.error || ragRes.statusText}`);
+                    } catch (e) {
+                        addLog(`⚠️  RAG indexing skipped (status: ${ragRes.status})`);
+                    }
                 }
             } catch (ragErr) {
                 addLog(`⚠️  RAG indexing failed: ${ragErr}`);
@@ -169,7 +177,11 @@ export function Import() {
             else {
                 addLog(`✅ Success! Imported ${data.count} files.`);
                 addLog("⚡ Syncing metadata...");
-                await fetch('http://localhost:5001/sync', { method: 'POST' });
+                const syncRes = await fetch('http://localhost:5001/sync', { method: 'POST' });
+                if (!syncRes.ok) {
+                    const errData = await syncRes.json().catch(() => ({}));
+                    throw new Error(`Sync failed: ${errData.message || syncRes.statusText}`);
+                }
                 addLog("✨ Minerva is Ready: Sync complete.");
             }
         } catch (err) { addLog(`❌ Failed: ${err}`); }
@@ -230,14 +242,23 @@ export function Import() {
                     const ragData = await ragRes.json();
                     addLog(`✨ Indexed ${ragData.chunks_added} chunks`);
                 } else {
-                    addLog(`⚠️  RAG indexing skipped`);
+                    try {
+                        const ragError = await ragRes.json();
+                        addLog(`⚠️  RAG indexing skipped: ${ragError.error || ragRes.statusText}`);
+                    } catch (e) {
+                        addLog(`⚠️  RAG indexing skipped (status: ${ragRes.status})`);
+                    }
                 }
             } catch (ragErr) {
                 addLog(`⚠️  RAG indexing failed: ${ragErr}`);
             }
 
             addLog("⚡ Syncing metadata...");
-            await fetch('http://localhost:5001/sync', { method: 'POST' });
+            const syncRes = await fetch('http://localhost:5001/sync', { method: 'POST' });
+            if (!syncRes.ok) {
+                const errData = await syncRes.json().catch(() => ({}));
+                throw new Error(`Sync failed: ${errData.message || syncRes.statusText}`);
+            }
             addLog("✅ Sync complete.");
             setPasteContent(''); setPasteTitle('');
         } catch (err) { addLog(`❌ Failed: ${err}`); }
@@ -287,7 +308,7 @@ export function Import() {
                                     isDragging ? "bg-blue-500 text-white scale-110" : "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/30")}>
                                     <FilePlus size={32} />
                                 </div>
-                                <h3 className="text-lg font-bold mb-1">Spotlight Documents (Hollywood)</h3>
+                                <h3 className="text-lg font-bold mb-1">Spotlight Documents</h3>
                                 <p className="text-sm text-gray-500 max-w-xs">Select PDF, DOCX, TXT, VTT, or Markdown files to analyze.</p>
                                 {isDragging && <div className="mt-4 text-blue-500 font-bold text-sm">Drop to import</div>}
                             </div>
