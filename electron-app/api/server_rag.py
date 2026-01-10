@@ -14,6 +14,31 @@ import os
 import subprocess
 from pathlib import Path
 
+# Handle PyInstaller packaged mode - add rag package to path if needed
+if getattr(sys, 'frozen', False):
+    # Running in a PyInstaller bundle
+    if hasattr(sys, '_MEIPASS'):
+        # Add rag and backend_core packages to path from temp directory
+        base_path = Path(sys._MEIPASS)
+        rag_path = base_path / 'rag'
+        backend_core_path = base_path / 'backend_core'
+        
+        # Add to sys.path if they exist
+        if rag_path.exists():
+            sys.path.insert(0, str(rag_path.parent))
+            print(f"DEBUG: Added rag package path: {rag_path.parent}", file=sys.stdout, flush=True)
+        if backend_core_path.exists():
+            sys.path.insert(0, str(backend_core_path.parent))
+            print(f"DEBUG: Added backend_core package path: {backend_core_path.parent}", file=sys.stdout, flush=True)
+else:
+    # In development mode, ensure PROJECT_ROOT is on path
+    # Calculate project root from this file's location
+    _this_file = Path(__file__).resolve()
+    _project_root = _this_file.parent.parent.parent  # Go up from electron-app/api/server_rag.py
+    if str(_project_root) not in sys.path:
+        sys.path.insert(0, str(_project_root))
+        print(f"DEBUG: Added project root to path: {_project_root}", file=sys.stdout, flush=True)
+
 print("DEBUG: Importing Flask...", file=sys.stdout, flush=True)
 from flask import Flask, jsonify, request
 from flask_cors import CORS
@@ -43,10 +68,15 @@ if config and hasattr(config, 'BASE_DIR'):
     print(f"DEBUG: Using config.BASE_DIR: {root_dir}", file=sys.stdout, flush=True)
 else:
     # Fallback: calculate from current file location
-    # Current file: .../Legislative_Analysis/electron-app/api/server_rag.py
-    # Root: .../Legislative_Analysis
-    root_dir = Path(__file__).parent.parent.parent.resolve()
-    print(f"DEBUG: Calculated root_dir from __file__: {root_dir}", file=sys.stdout, flush=True)
+    # In packaged mode, __file__ points to temp directory
+    if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+        root_dir = Path(sys._MEIPASS)
+        print(f"DEBUG: Using PyInstaller temp dir as root_dir: {root_dir}", file=sys.stdout, flush=True)
+    else:
+        # Current file: .../Legislative_Analysis/electron-app/api/server_rag.py
+        # Root: .../Legislative_Analysis
+        root_dir = Path(__file__).parent.parent.parent.resolve()
+        print(f"DEBUG: Calculated root_dir from __file__: {root_dir}", file=sys.stdout, flush=True)
 
 # Metadata JSON path - use BASE_DIR when available (handles packaged apps)
 if config and hasattr(config, 'BASE_DIR'):
@@ -66,7 +96,13 @@ else:
 
 # Import RAG components
 print("DEBUG: Importing RAG components...", file=sys.stdout, flush=True)
+print(f"DEBUG: sys.path: {sys.path[:3]}...", file=sys.stdout, flush=True)  # Show first 3 paths
+
+# Try importing RAG with better error handling
+RAG_AVAILABLE = False
 try:
+    import rag
+    print(f"DEBUG: rag module found at: {rag.__file__ if hasattr(rag, '__file__') else 'unknown'}", file=sys.stdout, flush=True)
     from rag import (
         LegislativeChunker,
         DocumentIndexer,
@@ -74,13 +110,19 @@ try:
         LegislativeRAGAgent
     )
     RAG_AVAILABLE = True
-    print("DEBUG: RAG components imported", file=sys.stdout, flush=True)
+    print("DEBUG: RAG components imported successfully", file=sys.stdout, flush=True)
 except ImportError as e:
+    import traceback
+    error_details = traceback.format_exc()
     logging.warning(f"RAG components not available: {e}")
-    print(f"DEBUG: RAG import error: {e}", file=sys.stdout, flush=True)
+    print(f"DEBUG: RAG ImportError: {e}", file=sys.stdout, flush=True)
+    print(f"DEBUG: Traceback: {error_details}", file=sys.stdout, flush=True)
     RAG_AVAILABLE = False
 except Exception as e:
+    import traceback
+    error_details = traceback.format_exc()
     print(f"DEBUG: RAG General error: {e}", file=sys.stdout, flush=True)
+    print(f"DEBUG: Traceback: {error_details}", file=sys.stdout, flush=True)
     RAG_AVAILABLE = False
 
 app = Flask(__name__)

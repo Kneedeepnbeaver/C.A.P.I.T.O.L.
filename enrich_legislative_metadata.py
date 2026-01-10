@@ -8,9 +8,11 @@ from pathlib import Path
 from html.parser import HTMLParser
 
 # --- CONFIGURATION ---
-INPUT_DIR = "/Volumes/The Secret Archive/01_BUSINESS/Arts_by_Dylan/Blog Posts/shopify_articles_text"
-OUTPUT_CSV = "/Volumes/The Secret Archive/01_BUSINESS/Arts_by_Dylan/Blog Posts/Legislative_Analysis/legislative_metadata.csv"
-OUTPUT_JSON = "/Volumes/The Secret Archive/01_BUSINESS/Arts_by_Dylan/Blog Posts/Legislative_Analysis/legislative_metadata.json"
+# --- CONFIGURATION ---
+BASE_DIR = Path(__file__).parent
+INPUT_DIR = BASE_DIR / "legislative_documents"
+OUTPUT_CSV = BASE_DIR / "legislative_metadata.csv"
+OUTPUT_JSON = BASE_DIR / "legislative_metadata.json"
 MODEL = "phi3:latest"
 
 FIELDNAMES = [

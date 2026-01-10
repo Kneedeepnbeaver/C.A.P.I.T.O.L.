@@ -38,7 +38,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r electron-app/requirements.txt
+          # Also install rag requirements if they exist (they should be in electron-app/requirements.txt already)
+          if [ -f rag/requirements.txt ]; then
+            pip install -r rag/requirements.txt
+          fi
         shell: bash
+        env:
+          # Critical: Add project root to PYTHONPATH so `import rag` works
+          PYTHONPATH: ${{ github.workspace }}
 
       - name: Install Node Dependencies
         run: |
