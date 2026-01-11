@@ -7,6 +7,7 @@ Combines keyword search with optional semantic search for better retrieval.
 import logging
 from typing import List, Dict, Optional
 from .indexer import DocumentIndexer, ChunkRecord
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
