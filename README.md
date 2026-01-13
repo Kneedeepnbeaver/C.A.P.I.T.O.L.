@@ -1,130 +1,30 @@
-# C.A.P.I.T.O.L. Marketing Materials
+# C.A.P.I.T.O.L.
+> *Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking*
 
-This directory contains marketing and documentation materials for **C.A.P.I.T.O.L.** (Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking).
+A powerful productivity tool designed for Legislative Professionals. Analyze documents, track bills, and generate insights using advanced local RAG technology.
 
----
-
-## 📄 Available Documents
-
-### For Users
-
-- **[DOWNLOAD_INSTRUCTIONS.md](./DOWNLOAD_INSTRUCTIONS.md)** - Complete guide for downloading, installing, and unquarantining the app on all platforms
-- **[GETTING_STARTED.md](./GETTING_STARTED.md)** - Quick start guide and tutorial for new users
-- **[FEATURES.md](./FEATURES.md)** - Comprehensive feature overview and use cases
-- **[FAQ.md](./FAQ.md)** - Frequently asked questions and troubleshooting
-
-### For Developers & Contributors
-
-- **[project_description.md](./project_description.md)** - High-level project overview
-- **[project_description.html](./project_description.html)** - HTML version of project description
-- **[download_intro_draft.md](./download_intro_draft.md)** - Creative introduction for download pages
+[**⬇ Download Latest Release**](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./releases)
 
 ---
 
-## 🎯 Quick Links
+## Key Features
 
-- **GitHub Repository**: [github.com/Kneedeepnbeaver/C.A.P.I.T.O.L.](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L.)
-- **Releases**: [GitHub Releases](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./releases)
-- **License**: MIT License
+### 📄 Smart Ingestion
+Seamlessly import and process legislative PDFs and documents with automated text extraction and indexing.
 
----
+### 🔐 The Vault
+Securely store, organize, and manage your analyzed documents in a searchable, local database.
 
-## 📝 Document Overview
+### 🔮 The Oracle
+Ask complex questions about your bills and receive immediate, citation-backed answers from your local AI.
 
-### Download Instructions
-Complete step-by-step guide covering:
-- Download process for all platforms
-- macOS unquarantine instructions (3 methods)
-- Windows and Linux installation
-- Troubleshooting common issues
-- System requirements
-
-### Getting Started
-User-friendly tutorial covering:
-- First launch walkthrough
-- Core features explained
-- Quick start workflows
-- Settings configuration
-- Pro tips and best practices
-
-### Features
-Comprehensive feature documentation:
-- Detailed feature descriptions
-- Use cases and examples
-- Privacy and security information
-- Technical specifications
-- Roadmap
-
-### FAQ
-Answers to common questions:
-- General questions
-- Installation and setup
-- Features and usage
-- Privacy and security
-- Technical questions
-- Troubleshooting
-- Licensing
+### ✍️ Minerva's Forge
+Generate executive summaries, press releases, and social media content automatically from your documents.
 
 ---
 
-## 🚀 Using These Materials
-
-### For Website/README
-Copy relevant sections into your:
-- GitHub README.md
-- Project website
-- Documentation site
-- Download pages
-
-### For Social Media
-Extract key points for:
-- Feature announcements
-- Release notes
-- Tutorial posts
-- Community updates
-
-### For Support
-Reference these documents when:
-- Answering user questions
-- Creating support tickets
-- Writing blog posts
-- Giving presentations
-
----
-
-## 📋 Content Guidelines
-
-All marketing materials follow these principles:
-
-1. **Clear and Accessible**: Written for non-technical users
-2. **Privacy-Focused**: Emphasize local-first, no-cloud architecture
-3. **Open Source**: Highlight MIT License and community aspects
-4. **Professional**: Maintain professional tone while being approachable
-5. **Accurate**: All technical information is verified
-
----
-
-## 🔄 Keeping Materials Updated
-
-When updating C.A.P.I.T.O.L.:
-
-1. **New Features**: Update FEATURES.md and GETTING_STARTED.md
-2. **Installation Changes**: Update DOWNLOAD_INSTRUCTIONS.md
-3. **Common Issues**: Add to FAQ.md troubleshooting section
-4. **Version Updates**: Update version numbers and release dates
-
----
-
-## 📧 Contact
-
-For questions about these materials or suggestions for improvements:
-- Open an issue on GitHub
-- Submit a pull request with improvements
-
----
-
-**Last Updated**: January 2025  
-**Version**: 1.0.1
+*Built with Electron, React, and Local LLMs.*
+[View Source on GitHub](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L.)
 # Download & Installation Guide
 
 ## 🚀 Quick Start
@@ -314,211 +214,267 @@ To update to a newer version:
 C.A.P.I.T.O.L. is released under the **MIT License**. You are free to use, modify, and distribute this software.
 
 **Hack the Planet.** 🌍
-# Getting Started with C.A.P.I.T.O.L.
+# Frequently Asked Questions (FAQ)
 
-Welcome to **C.A.P.I.T.O.L.** (Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking)! This guide will help you get up and running quickly.
+## General Questions
+
+### What is C.A.P.I.T.O.L.?
+
+**C.A.P.I.T.O.L.** stands for **Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking**. It's a desktop application that helps legislative professionals analyze documents, track bills, and generate insights using AI technology.
+
+### Who is C.A.P.I.T.O.L. for?
+
+C.A.P.I.T.O.L. is designed for:
+- Legislative staff
+- Policy analysts
+- Advocacy organizations
+- Journalists covering legislation
+- Lobbyists
+- Researchers
+- Anyone who works with legislative documents
+
+### Is C.A.P.I.T.O.L. free?
+
+Yes! C.A.P.I.T.O.L. is released under the **MIT License**, which means it's free to use, modify, and distribute.
+
+### What operating systems are supported?
+
+C.A.P.I.T.O.L. runs on:
+- **macOS** (10.15+)
+- **Windows** (10+)
+- **Linux** (most modern distributions)
 
 ---
 
-## 🎯 First Launch
+## Installation & Setup
 
-When you first open C.A.P.I.T.O.L., you'll see the Welcome screen. Here's what to expect:
+### Why do I need to "unquarantine" the app on macOS?
 
-1. **Welcome Screen**: Overview of the app's features
-2. **Demo Content**: Sample legislative documents are included to help you explore
-3. **Settings**: Configure your local LLM connection (if using Ollama or similar)
+macOS Gatekeeper quarantines apps downloaded from the internet that aren't signed by Apple. Since C.A.P.I.T.O.L. is distributed under the MIT License and may not be code-signed, you need to remove the quarantine attribute. See [DOWNLOAD_INSTRUCTIONS.md](./DOWNLOAD_INSTRUCTIONS.md) for detailed steps.
+
+### Is C.A.P.I.T.O.L. safe to install?
+
+Yes. C.A.P.I.T.O.L. is open source, so you can review the code yourself. The app runs entirely on your computer—no data is transmitted to external servers. However, as with any software, only download from the official GitHub releases page.
+
+### Do I need to install Python separately?
+
+No. C.A.P.I.T.O.L. includes a bundled Python backend. You don't need to install Python separately.
+
+### Do I need an internet connection?
+
+For basic document management and search, no internet is required. However, if you're using a cloud-based LLM (instead of a local one), you'll need internet for The Oracle and content generation features.
 
 ---
 
-## 📚 Core Features Overview
+## Features & Usage
 
-### 1. 📄 Smart Ingestion (Import)
+### What file formats does C.A.P.I.T.O.L. support?
 
-**What it does:** Import and process legislative documents (PDFs, text files, transcripts)
-
-**How to use:**
-1. Click **"Import"** in the sidebar
-2. Drag and drop files or click to browse
-3. The app will automatically:
-   - Extract text from PDFs
-   - Index content for search
-   - Extract metadata (bill numbers, dates, etc.)
-4. Documents appear in **The Vault** (Library) when ready
-
-**Supported formats:**
+C.A.P.I.T.O.L. can import:
 - PDF files
-- Plain text (.txt)
-- Markdown (.md)
+- Plain text files (.txt)
+- Markdown files (.md)
 - WebVTT transcripts (.vtt)
 
----
+### How does The Oracle work?
 
-### 2. 🗄️ The Vault (Library)
+The Oracle uses **RAG (Retrieval-Augmented Generation)** technology:
+1. Your documents are indexed and stored locally
+2. When you ask a question, it searches your document library
+3. Relevant sections are retrieved
+4. A local AI model generates an answer based on those sections
+5. Citations are provided for every answer
 
-**What it does:** Your secure, searchable document database
+### Can I use my own AI model?
 
-**How to use:**
-1. Click **"Library"** in the sidebar
-2. Browse all imported documents
-3. Click any document to view details
-4. Use the search bar to find specific bills or topics
-5. Filter by date, type, or keywords
+Yes! C.A.P.I.T.O.L. supports:
+- **Ollama** (recommended for local models)
+- **LM Studio**
+- Custom API endpoints
 
-**Features:**
-- Full-text search across all documents
-- Metadata extraction (bill numbers, sponsors, dates)
-- Document organization and tagging
-- Export capabilities
+Configure your LLM in Settings.
 
----
+### How accurate are the AI-generated answers?
 
-### 3. 🔮 The Oracle (AI Chat)
+The accuracy depends on:
+- The quality of your source documents
+- The AI model you're using
+- The specificity of your question
 
-**What it does:** Ask questions about your documents and get AI-powered answers with citations
+Always verify important information by checking the citations and source documents. The Oracle is a tool to help you find information faster, not a replacement for careful review.
 
-**How to use:**
-1. Click **"Chat"** or **"Oracle"** in the sidebar
-2. Type your question in natural language
-3. Examples:
-   - "What are the key provisions of AB-2026?"
-   - "Compare the renewable energy bills in my library"
-   - "Summarize the transportation legislation from last session"
-4. The Oracle will:
-   - Search your document library
-   - Generate an answer with citations
-   - Highlight relevant sections
+### Can I export generated content?
 
-**Tips:**
-- Be specific with bill numbers or document names
-- Ask follow-up questions for deeper analysis
-- Use the citation links to jump to source documents
+Yes! Generated content can be exported as:
+- Markdown (.md)
+- Plain text (.txt)
+- PDF (coming soon)
 
----
+### Where are my documents stored?
 
-### 4. ✍️ Minerva's Forge (Content Generation)
+Documents are stored locally on your computer in the app's data directory:
+- **macOS**: `~/Library/Application Support/C.A.P.I.T.O.L./`
+- **Windows**: `%APPDATA%/C.A.P.I.T.O.L./`
+- **Linux**: `~/.config/C.A.P.I.T.O.L./`
 
-**What it does:** Automatically generate professional documents from your legislative content
-
-**Available templates:**
-- **Executive Summary**: High-level overview of bills
-- **Press Release**: Media-ready announcements
-- **Talking Points**: Pro/con arguments for debates
-- **Committee Briefing**: Detailed analysis for committees
-- **Social Media Suite**: Twitter, Facebook, LinkedIn posts
-- **Policy Analysis**: In-depth policy breakdowns
-
-**How to use:**
-1. Click **"Analysis"** in the sidebar
-2. Select a document from your library
-3. Choose a template
-4. Configure options (tone, length, focus areas)
-5. Click **"Generate"**
-6. Review and export the generated content
-
-**Pro tip:** Generate multiple formats from the same bill to create a complete communications package.
+Your data never leaves your machine.
 
 ---
 
-## 🚀 Quick Start Workflow
+## Privacy & Security
 
-### Scenario: Analyzing a New Bill
+### Does C.A.P.I.T.O.L. send my documents to the cloud?
 
-1. **Import the bill**
-   - Go to Import → Select your PDF or text file
-   - Wait for indexing to complete
+**No.** When using a local LLM (like Ollama), all processing happens on your computer. Your documents never leave your machine.
 
-2. **Explore with The Oracle**
-   - Ask: "What is this bill about?"
-   - Ask: "Who are the sponsors?"
-   - Ask: "What are the key provisions?"
+### What if I use a cloud-based LLM?
 
-3. **Generate materials**
-   - Create an Executive Summary for quick reference
-   - Generate Talking Points for a meeting
-   - Create a Press Release if needed
+If you configure C.A.P.I.T.O.L. to use a cloud-based LLM API, your queries and document excerpts may be sent to that service. Check your LLM provider's privacy policy. For maximum privacy, use a local LLM.
 
-4. **Store in The Vault**
-   - All documents are automatically saved
-   - Searchable and organized
-   - Export when needed
+### Is my data encrypted?
+
+Documents are stored in plain text in the app's data directory. If you need encryption, use disk encryption (FileVault on macOS, BitLocker on Windows) or store documents in an encrypted folder.
+
+### Can I delete my data?
+
+Yes. You can:
+- Delete individual documents from within the app
+- Delete the entire data directory to remove all documents
+- Uninstall the app (your data directory will remain unless manually deleted)
 
 ---
 
-## ⚙️ Settings & Configuration
+## Technical Questions
 
-### Local LLM Setup
+### What is RAG?
 
-C.A.P.I.T.O.L. uses local AI models for privacy and speed. Configure your connection:
+**RAG** stands for **Retrieval-Augmented Generation**. It's a technique that:
+1. Stores your documents in a searchable format
+2. Retrieves relevant sections when you ask questions
+3. Uses those sections to generate accurate, cited answers
 
-1. Go to **Settings**
-2. **LLM Provider**: Choose your local LLM service
-   - Ollama (recommended)
-   - LM Studio
-   - Custom API endpoint
-3. **Model Selection**: Choose your preferred model
-   - For analysis: Larger models (7B+ parameters)
-   - For speed: Smaller models (3B-7B parameters)
-4. **Test Connection**: Verify your setup works
+This is more accurate than asking an AI model directly because it's grounded in your actual documents.
 
-### Recommended Models
+### What programming languages is C.A.P.I.T.O.L. built with?
 
-- **Llama 3.1 8B**: Balanced performance and speed
-- **Mistral 7B**: Fast and efficient
-- **Llama 3.1 70B**: Best quality (requires powerful hardware)
+- **Frontend**: React, TypeScript, Electron
+- **Backend**: Python
+- **UI**: Tailwind CSS
 
----
+### Can I contribute to the project?
 
-## 📖 Sample Workflow Examples
+Yes! C.A.P.I.T.O.L. is open source. You can:
+- Report bugs on GitHub
+- Request features
+- Submit pull requests
+- Improve documentation
 
-### Example 1: Committee Meeting Prep
+Visit the [GitHub repository](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L.) to get started.
 
-1. Import all relevant bills for the meeting
-2. Use The Oracle: "What are the main differences between SB-101 and AB-2026?"
-3. Generate Committee Briefing for each bill
-4. Create Talking Points for your position
-5. Export everything to a folder
+### How do I report a bug?
 
-### Example 2: Media Response
-
-1. Import the bill in question
-2. Generate Executive Summary for background
-3. Create Press Release with your organization's position
-4. Generate Social Media Suite for coordinated messaging
-5. Review and customize before publishing
-
-### Example 3: Research Project
-
-1. Import multiple related documents
-2. Use The Oracle for comparative analysis
-3. Generate Policy Analysis reports
-4. Export findings for your research paper
+Open an issue on GitHub with:
+- Description of the problem
+- Steps to reproduce
+- Your operating system and version
+- Any error messages
+- Screenshots if applicable
 
 ---
 
-## 💡 Pro Tips
+## Troubleshooting
 
-- **Batch Import**: Import multiple documents at once for faster setup
-- **Save Queries**: Frequently asked questions can be saved as templates
-- **Export Formats**: Generated content can be exported as Markdown, PDF, or plain text
-- **Keyboard Shortcuts**: Check the Help menu for time-saving shortcuts
-- **Demo Content**: Explore the included sample documents to learn the interface
+### The app won't launch on macOS
+
+Try these steps:
+1. Unquarantine the app (see [DOWNLOAD_INSTRUCTIONS.md](./DOWNLOAD_INSTRUCTIONS.md))
+2. Right-click and select "Open" instead of double-clicking
+3. Check System Settings → Privacy & Security for blocked apps
+4. Remove extended attributes: `xattr -cr /Applications/C.A.P.I.T.O.L.app`
+
+### The Oracle isn't responding
+
+1. Check your LLM connection in Settings
+2. Verify your local LLM is running (if using Ollama)
+3. Check the console for error messages
+4. Try restarting the app
+
+### Documents aren't importing
+
+1. Check that the file format is supported
+2. Ensure the file isn't corrupted
+3. Try a smaller file first
+4. Check available disk space
+5. Review the console logs for errors
+
+### Search isn't finding my documents
+
+1. Wait for indexing to complete (check the status in Library)
+2. Try different keywords
+3. Use The Oracle for semantic search instead
+4. Re-import the document if needed
+
+### Generated content seems inaccurate
+
+1. Verify your source documents are complete and accurate
+2. Try a more specific question or prompt
+3. Check the citations to see what the AI based its answer on
+4. Consider using a larger/more capable AI model
+5. Always review and fact-check generated content
 
 ---
 
-## 🆘 Need Help?
+## Licensing & Legal
 
-- **Help Menu**: Click "Help" in the sidebar for in-app documentation
-- **GitHub Issues**: Report bugs or request features on [GitHub](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./issues)
-- **Documentation**: Check the `/docs` folder in the repository for technical details
+### Can I use C.A.P.I.T.O.L. commercially?
+
+Yes. The MIT License allows commercial use.
+
+### Can I modify C.A.P.I.T.O.L.?
+
+Yes. The MIT License allows modification. You must include the original license and copyright notice.
+
+### Can I redistribute C.A.P.I.T.O.L.?
+
+Yes, as long as you include the original license and copyright notice.
+
+### Who created C.A.P.I.T.O.L.?
+
+C.A.P.I.T.O.L. was created by Dylan Carpowich (artsbydylan.com) and is released under the MIT License.
 
 ---
 
-## 🎓 Next Steps
+## Getting Help
 
-1. ✅ Import your first document
-2. ✅ Ask The Oracle a question
-3. ✅ Generate your first Executive Summary
-4. ✅ Explore the demo content
-5. ✅ Customize settings for your workflow
+### Where can I get support?
 
-**Welcome to C.A.P.I.T.O.L. — Your AI-powered legislative analysis companion!**
+- **GitHub Issues**: Report bugs and request features
+- **Documentation**: Check the `/docs` folder in the repository
+- **Help Menu**: In-app documentation and guides
+
+### Is there a user community?
+
+The GitHub repository is the primary community hub. You can:
+- Ask questions in Issues
+- Share tips and workflows
+- Contribute improvements
+
+---
+
+## Future Features
+
+### What's coming next?
+
+Planned features include:
+- Collaboration tools
+- Advanced analytics and visualizations
+- Calendar integration
+- Email import
+- More content templates
+- Plugin system
+
+Check the GitHub repository for the latest roadmap and updates.
+
+---
+
+**Still have questions?** Open an issue on [GitHub](https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./issues) or check the documentation in the `/docs` folder.
