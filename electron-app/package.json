@@ -2,7 +2,7 @@
   "name": "legislative-analysis-tool",
   "main": "electron/main.js",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "C.A.P.I.T.O.L. - Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking",
   "author": "Dylan Carpowich (artsbydylan.com)",
   "license": "MIT",
@@ -20,7 +20,9 @@
     "start": "electron-forge start",
     "package": "npm run build && npm run build:python && electron-forge package",
     "make": "npm run build && npm run build:python && electron-forge make",
-    "make:ci": "npm run build && npm run build:python:ci && electron-forge make"
+    "make:ci": "npm run build && npm run build:python:ci && electron-forge make",
+    "publish": "npm run build && npm run build:python && electron-forge publish",
+    "publish:ci": "npm run build && npm run build:python:ci && electron-forge publish"
   },
   "build": {
     "appId": "com.artsdylan.legislative-analysis",
@@ -83,6 +85,7 @@
     "@electron-forge/maker-zip": "^7.10.2",
     "@electron-forge/plugin-auto-unpack-natives": "^7.10.2",
     "@electron-forge/plugin-fuses": "^7.10.2",
+    "@electron-forge/publisher-github": "^7.11.1",
     "@electron/fuses": "^1.8.0",
     "@eslint/js": "^9.39.1",
     "@tailwindcss/postcss": "^4.1.18",

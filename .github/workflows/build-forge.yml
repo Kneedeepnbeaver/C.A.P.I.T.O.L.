@@ -55,7 +55,11 @@ jobs:
       - name: Make (Build & Package)
         run: |
           cd electron-app
-          npm run make:ci
+          if [[ $GITHUB_REF == refs/tags/v* ]]; then
+            npm run publish:ci
+          else
+            npm run make:ci
+          fi
         shell: bash
         env:
           # Critical: Add project root to PYTHONPATH so `import rag` works in build_python.py
