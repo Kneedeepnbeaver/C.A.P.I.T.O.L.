@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.A.P.I.T.O.L. - Civic Artificial Programming & Intelligence</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --bg: #f8f9fa;
+            --text: #333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .hero-desc {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            color: #4a5568;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(231, 76, 60, 0.2);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+            background-color: #c0392b;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            margin-bottom: 0;
+        }
+
+        .feature-card ul {
+            color: #666;
+            margin: 1rem 0 0 0;
+            padding-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .feature-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .section {
+            margin: 4rem 0;
+        }
+
+        .section h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .highlight-box h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .highlight-box ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .use-case {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .use-case h4 {
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .use-case p {
+            color: #666;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Ensure button text is white even in footer */
+        footer a.cta-button {
+            color: white;
+        }
+
+        /* Download Instructions Styles */
+        .download-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .download-section h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        .platform-instructions {
+            margin: 2rem 0;
+        }
+
+        .platform-instructions h4 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .platform-instructions ol,
+        .platform-instructions ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .platform-instructions li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .code-block code {
+            color: #ecf0f1;
+        }
+
+        .note-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .note-box strong {
+            color: #856404;
+        }
+
+        .system-requirements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .requirement-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid var(--accent);
+        }
+
+        .requirement-card h5 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        .requirement-card ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.25rem;
+            font-size: 0.9rem;
+        }
+
+        .troubleshooting {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .troubleshooting h5 {
+            color: #721c24;
+            margin-top: 0;
+        }
+
+        .troubleshooting p {
+            color: #721c24;
+            margin: 0.5rem 0;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 1rem 2rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .hero-desc {
+                font-size: 1.1rem;
+                padding: 0 1rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                margin: 2rem 0;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .highlight-box {
+                padding: 1.5rem;
+            }
+
+            .highlight-box h3 {
+                font-size: 1.2rem;
+            }
+
+            .use-cases {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .use-case {
+                padding: 1rem;
+            }
+
+            .cta-button {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
+                width: 100%;
+                max-width: 300px;
+                display: block;
+                margin: 0 auto 1rem;
+            }
+
+            .download-section {
+                padding: 1.5rem;
+            }
+
+            .download-section h3 {
+                font-size: 1.3rem;
+            }
+
+            .platform-instructions h4 {
+                font-size: 1.1rem;
+            }
+
+            .code-block {
+                font-size: 0.85rem;
+                padding: 0.75rem;
+            }
+
+            .system-requirements {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                padding: 1rem;
+                font-size: 0.85rem;
+            }
+
+            footer a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 0.9rem;
+            }
+
+            .hero-desc {
+                font-size: 1rem;
+            }
+
+            .feature-card {
+                padding: 1rem;
+            }
+
+            .highlight-box {
+                padding: 1rem;
+            }
+
+            .download-section {
+                padding: 1rem;
+            }
+
+            .code-block {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>C.A.P.I.T.O.L.</h1>
+            <div class="tagline">Civic Artificial Programming & Intelligence for Tracking, Organizing & Lawmaking</div>
+        </header>
+
+        <div class="intro">
+            <p class="hero-desc">
+                A powerful productivity tool designed for Legislative Professionals. Analyze documents, track bills, and
+                generate insights using advanced local RAG technology.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>📄 Smart Ingestion</h3>
+                <p>Seamlessly import and process legislative PDFs and documents with automated text extraction and indexing.</p>
+                <ul>
+                    <li>Multi-format support: PDFs, text files, markdown, WebVTT transcripts</li>
+                    <li>Intelligent metadata extraction (bill numbers, dates, sponsors)</li>
+                    <li>Batch processing for multiple documents</li>
+                    <li>Automatic text extraction and structure parsing</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🗄️ The Vault</h3>
+                <p>Securely store, organize, and manage your analyzed documents in a searchable, local database.</p>
+                <ul>
+                    <li>Full-text search across all documents</li>
+                    <li>Advanced filtering by date, type, keywords, or metadata</li>
+                    <li>Local storage—your data never leaves your machine</li>
+                    <li>Export options in multiple formats</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔮 The Oracle</h3>
+                <p>Ask complex questions about your bills and receive immediate, citation-backed answers from your local AI.</p>
+                <ul>
+                    <li>Natural language queries in plain English</li>
+                    <li>Citation-backed answers with source links</li>
+                    <li>Comparative analysis across multiple documents</li>
+                    <li>Conversational interface for follow-up questions</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>✍️ Minerva's Forge</h3>
+                <p>Generate executive summaries, press releases, and social media content automatically from your documents.</p>
+                <ul>
+                    <li>Executive Summaries for quick briefings</li>
+                    <li>Press Releases with professional formatting</li>
+                    <li>Talking Points (pro/con arguments)</li>
+                    <li>Committee Briefings, Policy Analysis, and Social Media Suites</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔒 Privacy & Security</h2>
+            <div class="highlight-box">
+                <h3>Local-First Architecture</h3>
+                <p>Your documents never leave your computer. Everything runs locally for maximum privacy and security.</p>
+                <ul>
+                    <li><strong>No Cloud Required:</strong> Everything runs on your computer</li>
+                    <li><strong>No Data Transmission:</strong> Your documents stay private</li>
+                    <li><strong>Local LLM:</strong> AI processing happens on your machine</li>
+                    <li><strong>Offline Capable:</strong> Works without internet connection</li>
+                    <li><strong>Open Source:</strong> MIT License—audit the code yourself</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Who Benefits from C.A.P.I.T.O.L.?</h2>
+            <div class="use-cases">
+                <div class="use-case">
+                    <h4>Legislative Staff</h4>
+                    <p>Track bills, prepare briefings, and generate talking points for legislators.</p>
+                </div>
+                <div class="use-case">
+                    <h4>Policy Analysts</h4>
+                    <p>Comparative policy analysis, impact assessments, and research documentation.</p>
+                </div>
+                <div class="use-case">
+                    <h4>Advocacy Organizations</h4>
+                    <p>Monitor legislation, generate communications materials, and prepare testimony.</p>
+                </div>
+                <div class="use-case">
+                    <h4>Journalists</h4>
+                    <p>Quick bill summaries, fact-checking, and background research.</p>
+                </div>
+                <div class="use-case">
+                    <h4>Lobbyists</h4>
+                    <p>Track client-relevant bills and prepare position papers and advocacy materials.</p>
+                </div>
+                <div class="use-case">
+                    <h4>Researchers</h4>
+                    <p>Academic research, policy studies, and historical analysis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚡ Technical Highlights</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🔧 Built for Professionals</h3>
+                    <ul>
+                        <li>Cross-platform: macOS, Windows, and Linux</li>
+                        <li>RAG Technology for accurate, cited answers</li>
+                        <li>Vector search for semantic content discovery</li>
+                        <li>Fast indexing and instant search</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Modern Experience</h3>
+                    <ul>
+                        <li>Clean, intuitive interface</li>
+                        <li>Keyboard shortcuts for power users</li>
+                        <li>Dark mode support</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div style="text-align: center; margin: 3rem 0;">
+                <a href="https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./releases" class="cta-button" target="_blank">
+                    ⬇ Download Latest Release
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="download-section">
+                <h3>📥 Download & Installation Guide</h3>
+                
+                <div class="platform-instructions">
+                    <h4>🚀 Quick Start</h4>
+                    <ol>
+                        <li>Visit the <a href="https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./releases" target="_blank" style="color: var(--accent);">GitHub Releases page</a></li>
+                        <li>Download the latest release for your operating system:
+                            <ul>
+                                <li><strong>macOS:</strong> <code>C.A.P.I.T.O.L.-[version]-mac-arm64.dmg</code> (Apple Silicon) or <code>C.A.P.I.T.O.L.-[version]-mac-x64.dmg</code> (Intel)</li>
+                                <li><strong>Windows:</strong> <code>C.A.P.I.T.O.L.-[version]-win-x64.exe</code></li>
+                                <li><strong>Linux:</strong> <code>C.A.P.I.T.O.L.-[version]-x86_64.AppImage</code></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>🍎 macOS Installation & Unquarantine</h4>
+                    <p><strong>Why Unquarantine?</strong> macOS Gatekeeper may quarantine downloaded applications from unidentified developers. Since C.A.P.I.T.O.L. is distributed under the MIT License, you'll need to unquarantine it.</p>
+                    
+                    <h5>Method 1: Terminal (Recommended)</h5>
+                    <ol>
+                        <li>Open Terminal (Applications → Utilities → Terminal, or press <code>Cmd + Space</code> and type "Terminal")</li>
+                        <li>Navigate to your Downloads folder:
+                            <div class="code-block">
+                                <code>cd ~/Downloads</code>
+                            </div>
+                        </li>
+                        <li>Unquarantine the DMG file:
+                            <div class="code-block">
+                                <code>xattr -d com.apple.quarantine C.A.P.I.T.O.L.-*.dmg</code>
+                            </div>
+                        </li>
+                        <li>Open the DMG:
+                            <div class="code-block">
+                                <code>open C.A.P.I.T.O.L.-*.dmg</code>
+                            </div>
+                            Or simply double-click the DMG file in Finder.
+                        </li>
+                        <li>Drag <code>C.A.P.I.T.O.L.app</code> from the DMG window to your Applications folder</li>
+                        <li>Unquarantine the installed app:
+                            <div class="code-block">
+                                <code>xattr -d com.apple.quarantine /Applications/C.A.P.I.T.O.L.app</code>
+                            </div>
+                        </li>
+                        <li>Launch the app. If you see a security warning, right-click the app and select "Open", then click "Open" in the dialog</li>
+                    </ol>
+
+                    <h5>Method 2: System Settings</h5>
+                    <ol>
+                        <li>Open <strong>System Settings</strong> → <strong>Privacy & Security</strong></li>
+                        <li>Look for: "C.A.P.I.T.O.L. was blocked"</li>
+                        <li>Click <strong>"Open Anyway"</strong> or <strong>"Allow"</strong></li>
+                        <li>Confirm by clicking <strong>"Open"</strong> in the dialog</li>
+                    </ol>
+
+                    <h5>Method 3: Right-Click Open</h5>
+                    <ol>
+                        <li>Navigate to <code>/Applications/C.A.P.I.T.O.L.app</code></li>
+                        <li><strong>Right-click</strong> (or Control-click) the app</li>
+                        <li>Select <strong>"Open"</strong> from the context menu</li>
+                        <li>Click <strong>"Open"</strong> in the security dialog</li>
+                    </ol>
+
+                    <div class="troubleshooting">
+                        <h5>macOS: "App is damaged and can't be opened"</h5>
+                        <p><strong>Solution:</strong></p>
+                        <div class="code-block">
+                            <code>xattr -cr /Applications/C.A.P.I.T.O.L.app</code>
+                        </div>
+                        <p>This removes all extended attributes (including quarantine) from the app.</p>
+                    </div>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>🪟 Windows Installation</h4>
+                    <ol>
+                        <li>Download the installer from GitHub Releases</li>
+                        <li>Run the installer (<code>C.A.P.I.T.O.L.-[version]-win-x64.exe</code>)</li>
+                        <li>Follow the installation wizard</li>
+                        <li>Launch C.A.P.I.T.O.L. from the Start menu or desktop shortcut</li>
+                    </ol>
+                    <div class="note-box">
+                        <strong>Note:</strong> Windows Defender or antivirus software may flag the app. This is common for unsigned applications. You may need to click "More info" on the warning screen and select "Run anyway", or add an exception in Windows Defender settings.
+                    </div>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>🐧 Linux Installation</h4>
+                    <ol>
+                        <li>Download the AppImage from GitHub Releases</li>
+                        <li>Make it executable:
+                            <div class="code-block">
+                                <code>chmod +x C.A.P.I.T.O.L.-[version]-x86_64.AppImage</code>
+                            </div>
+                        </li>
+                        <li>Run the app:
+                            <div class="code-block">
+                                <code>./C.A.P.I.T.O.L.-[version]-x86_64.AppImage</code>
+                            </div>
+                        </li>
+                    </ol>
+                    <p><strong>Optional:</strong> To integrate with your system, move the AppImage to <code>~/Applications</code> or <code>/opt</code> and create a desktop entry for easier launching.</p>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>📋 System Requirements</h4>
+                    <div class="system-requirements">
+                        <div class="requirement-card">
+                            <h5>macOS</h5>
+                            <ul>
+                                <li>macOS 10.15+</li>
+                                <li>Apple Silicon or Intel</li>
+                                <li>4GB RAM (8GB recommended)</li>
+                                <li>500MB free disk space</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-card">
+                            <h5>Windows</h5>
+                            <ul>
+                                <li>Windows 10+</li>
+                                <li>64-bit processor</li>
+                                <li>4GB RAM (8GB recommended)</li>
+                                <li>500MB free disk space</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-card">
+                            <h5>Linux</h5>
+                            <ul>
+                                <li>Ubuntu 20.04+ / Fedora 34+</li>
+                                <li>64-bit processor</li>
+                                <li>4GB RAM (8GB recommended)</li>
+                                <li>500MB free disk space</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>✅ Verification</h4>
+                    <p>After installation, verify everything works:</p>
+                    <ol>
+                        <li>Launch C.A.P.I.T.O.L.</li>
+                        <li>You should see the welcome screen</li>
+                        <li>Check that the Oracle (AI chat) is accessible</li>
+                        <li>Try importing a sample document from the demo content</li>
+                    </ol>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>🆘 Troubleshooting</h4>
+                    <div class="troubleshooting">
+                        <h5>App won't launch / Crashes on startup</h5>
+                        <ol>
+                            <li>Check that you have the required Python runtime (if using local LLM)</li>
+                            <li>Ensure you have sufficient disk space</li>
+                            <li>Check the console logs:
+                                <ul>
+                                    <li><strong>macOS:</strong> Open Console.app and filter for "C.A.P.I.T.O.L"</li>
+                                    <li><strong>Windows:</strong> Check Event Viewer</li>
+                                    <li><strong>Linux:</strong> Check <code>~/.config/C.A.P.I.T.O.L/logs/</code></li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="note-box">
+                        <strong>Python backend not found?</strong> The app includes a bundled Python backend. If you see errors about missing Python, ensure the app was installed correctly (not just copied), re-download and reinstall from the DMG/installer, and check that the app bundle is intact.
+                    </div>
+                </div>
+
+                <div class="platform-instructions">
+                    <h4>🔄 Updating</h4>
+                    <p>To update to a newer version:</p>
+                    <ol>
+                        <li>Download the latest release from GitHub</li>
+                        <li>Follow the installation steps above</li>
+                        <li>The new version will replace the old one</li>
+                        <li>Your documents and settings are preserved in the app's data directory</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with Electron, React, and Local LLMs.<br>
+                <a href="https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L.">View Source on GitHub</a> | 
+                <a href="https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./blob/main/marketing/GETTING_STARTED.md">Getting Started Guide</a> | 
+                <a href="https://github.com/Kneedeepnbeaver/C.A.P.I.T.O.L./blob/main/marketing/FAQ.md">FAQ</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                Released under the MIT License. <strong>Hack the Planet.</strong> 🌍
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
